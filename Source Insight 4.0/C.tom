@@ -1034,9 +1034,6 @@ _Deref2_post1_impl_(p1)
 _Deref2_ret1_impl_(p1)        
 
 
-;For Linux Kernel Code
-DECLARE_BITMAP(name,bits) unsigned long name[bits/32]
-DEFINE_MUTEX(mutexname) struct mutex mutexname
-DRIVER_ATTR(_name, _mode, _show, _store) struct driver_attribute driver_attr_##_name
-LIST_HEAD(name) struct list_head name
-RADIX_TREE(name, mask) struct radix_tree_root name
+
+
+

@@ -201,7 +201,7 @@
 		BlockBinaryFiles="1"
 		OpenBackupsAsReadOnly="1"
 		DefaultFileFormat="2"
-		DefaultEncoding="0"
+		DefaultEncoding="65001"
 		FileOpenAction="Project File List"
 		/>
 	<LookupPreferences
@@ -210,7 +210,7 @@
 		AlwaysSearchProjectPath="0"
 		ParseBeforeLookup="0"
 		SearchOnlyProjectFiles="0"
-		MatchAllLanguages="1"
+		MatchAllLanguages="0"
 		>
 		<ProjectSymbolPathPath />
 	</LookupPreferences>
@@ -1126,7 +1126,7 @@
 			AddToProject="1"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
-			VisibleTabs="1"
+			VisibleTabs="0"
 			VisibleSpaces="0"
 			ShowLineNumbers="1"
 			ShowRightMargin="0"
@@ -1136,7 +1136,7 @@
 			AllowAutocomplete="1"
 			AllowSmartPaste="0"
 			AllowSnippets="1"
-			ShowRefHighlights="1"
+			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
 			IndentWidth="1"
@@ -1979,7 +1979,7 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="1"
+			IndentWidth="4"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
@@ -2542,7 +2542,7 @@
 			SmartIndent="1"
 			ContainsSourceCode="1"
 			SyntaxFormatting="1"
-			UseRegexParsing="1"
+			UseRegexParsing="0"
 			SyntaxDecorations="1"
 			CommentStyles="1"
 			AllowSmartTab="1"
@@ -2555,13 +2555,7 @@
 			QOctalNum="0"
 			NonAlphaNumIdentChars="_$"
 			>
-			<CustomParsing>
-				<Expression
-					SymbolType="Macro"
-					Pattern="(?&lt;=\.macro.)([_A-Za-z][_A-Za-z0-9]+)"
-					RegexType="Perl Compatible multi-line"
-					/>
-			</CustomParsing>
+			<CustomParsing/>
 			<Ranges/>
 			<Keywords>
 				<Item Keyword="(" Style="Delimiter" />
@@ -7682,17 +7676,7 @@
 					/>
 				<Expression
 					SymbolType="Function"
-					Pattern="^([_A-Za-z][A-Za-z0-9_]+):"
-					RegexType="Perl Compatible multi-line"
-					/>
-				<Expression
-					SymbolType="Function"
-					Pattern="^ENTRY\(([_A-Za-z][_A-Za-z0-9]+)\)"
-					RegexType="Perl Compatible multi-line"
-					/>
-				<Expression
-					SymbolType="Macro"
-					Pattern="(?&lt;=\.macro.)([_A-Za-z][_A-Za-z0-9]+)"
+					Pattern="^([_A-Za-z][A-Za-z0-9_]+):*"
 					RegexType="Perl Compatible multi-line"
 					/>
 			</CustomParsing>
@@ -7818,8 +7802,7 @@
 				<Item Keyword="ACS" Style="Keyword" />
 				<Item Keyword="ADC" Style="Keyword" />
 				<Item Keyword="add" Style="Keyword" />
-				<Item Keyword="addlo" Style="Keyword" />
-				<Item Keyword="ADDLO" Style="Keyword" />
+				<Item Keyword="ADD" Style="Keyword" />
 				<Item Keyword="ADF" Style="Keyword" />
 				<Item Keyword="ADR" Style="Keyword" />
 				<Item Keyword="adr" Style="Keyword" />
@@ -7835,31 +7818,27 @@
 				<Item Keyword="ATN" Style="Keyword" />
 				<Item Keyword="b" Style="Keyword" />
 				<Item Keyword="B" Style="Keyword" />
-				<Item Keyword="bcc" Style="Keyword" />
-				<Item Keyword="BCC" Style="Keyword" />
-				<Item Keyword="beq" Style="Keyword" />
 				<Item Keyword="BEQ" Style="Keyword" />
+				<Item Keyword="beq" Style="Keyword" />
 				<Item Keyword="bgt" Style="Keyword" />
-				<Item Keyword="bic" Style="Keyword" />
 				<Item Keyword="BIC" Style="Keyword" />
+				<Item Keyword="bic" Style="Keyword" />
 				<Item Keyword="BKPT" Style="Keyword" />
 				<Item Keyword="bl" Style="Keyword" />
 				<Item Keyword="BL" Style="Keyword" />
-				<Item Keyword="blo" Style="Keyword" />
-				<Item Keyword="BLO" Style="Keyword" />
 				<Item Keyword="BLX" Style="Keyword" />
-				<Item Keyword="bne" Style="Keyword" />
 				<Item Keyword="BNE" Style="Keyword" />
+				<Item Keyword="bne" Style="Keyword" />
 				<Item Keyword="bx" Style="Keyword" />
 				<Item Keyword="BX" Style="Keyword" />
 				<Item Keyword="CDP" Style="Keyword" />
 				<Item Keyword="CDP2" Style="Keyword" />
-				<Item Keyword="clz" Style="Keyword" />
 				<Item Keyword="CLZ" Style="Keyword" />
+				<Item Keyword="clz" Style="Keyword" />
 				<Item Keyword="CMF" Style="Keyword" />
 				<Item Keyword="CMN" Style="Keyword" />
-				<Item Keyword="cmp" Style="Keyword" />
 				<Item Keyword="CMP" Style="Keyword" />
+				<Item Keyword="cmp" Style="Keyword" />
 				<Item Keyword="CNF" Style="Keyword" />
 				<Item Keyword="COS" Style="Keyword" />
 				<Item Keyword="cps" Style="Keyword" />
@@ -7875,8 +7854,8 @@
 				<Item Keyword="defined" Style="Directive" />
 				<Item Keyword="dmb" Style="Keyword" />
 				<Item Keyword="DMB" Style="Keyword" />
-				<Item Keyword="dsb" Style="Keyword" />
 				<Item Keyword="DSB" Style="Keyword" />
+				<Item Keyword="dsb" Style="Keyword" />
 				<Item Keyword="DVF" Style="Keyword" />
 				<Item Keyword="elif" Style="Directive" />
 				<Item Keyword="else" Style="Directive" />
@@ -7934,14 +7913,13 @@
 				<Item Keyword="ifdef" Style="Directive" />
 				<Item Keyword="ifndef" Style="Directive" />
 				<Item Keyword="include" Style="Keyword" />
-				<Item Keyword="isb" Style="Keyword" />
 				<Item Keyword="ISB" Style="Keyword" />
+				<Item Keyword="isb" Style="Keyword" />
 				<Item Keyword="LDC" Style="Keyword" />
 				<Item Keyword="LDC2" Style="Keyword" />
 				<Item Keyword="LDF" Style="Keyword" />
 				<Item Keyword="LDM" Style="Keyword" />
 				<Item Keyword="ldmfd" Style="Keyword" />
-				<Item Keyword="LDMFD" Style="Keyword" />
 				<Item Keyword="ldmia" Style="Keyword" />
 				<Item Keyword="LDMIA" Style="Keyword" />
 				<Item Keyword="ldr" Style="Keyword" />
@@ -7971,11 +7949,10 @@
 				<Item Keyword="MOVS" Style="Keyword" />
 				<Item Keyword="movs" Style="Keyword" />
 				<Item Keyword="movw" Style="Keyword" />
-				<Item Keyword="mrc" Style="Keyword" />
 				<Item Keyword="MRC" Style="Keyword" />
+				<Item Keyword="mrc" Style="Keyword" />
 				<Item Keyword="MRC2" Style="Keyword" />
 				<Item Keyword="mrcne" Style="Keyword" />
-				<Item Keyword="mrrc" Style="Keyword" />
 				<Item Keyword="MRRC" Style="Keyword" />
 				<Item Keyword="mrs" Style="Keyword" />
 				<Item Keyword="MRS" Style="Keyword" />
@@ -8058,8 +8035,6 @@
 				<Item Keyword="STC2" Style="Keyword" />
 				<Item Keyword="STF" Style="Keyword" />
 				<Item Keyword="STM" Style="Keyword" />
-				<Item Keyword="STMDB" Style="Keyword" />
-				<Item Keyword="stmdb" Style="Keyword" />
 				<Item Keyword="STMFD" Style="Keyword" />
 				<Item Keyword="stmfd" Style="Keyword" />
 				<Item Keyword="stmia" Style="Keyword" />
@@ -8067,11 +8042,7 @@
 				<Item Keyword="STR" Style="Keyword" />
 				<Item Keyword="str" Style="Keyword" />
 				<Item Keyword="STRB" Style="Keyword" />
-				<Item Keyword="STRCC" Style="Keyword" />
-				<Item Keyword="strcc" Style="Keyword" />
 				<Item Keyword="STRH" Style="Keyword" />
-				<Item Keyword="STRLO" Style="Keyword" />
-				<Item Keyword="strlo" Style="Keyword" />
 				<Item Keyword="STRSB" Style="Keyword" />
 				<Item Keyword="STRSH" Style="Keyword" />
 				<Item Keyword="sub" Style="Keyword" />
@@ -8081,11 +8052,9 @@
 				<Item Keyword="SWI" Style="Keyword" />
 				<Item Keyword="SWP" Style="Keyword" />
 				<Item Keyword="TAN" Style="Keyword" />
-				<Item Keyword="teq" Style="Keyword" />
 				<Item Keyword="TEQ" Style="Keyword" />
 				<Item Keyword="tst" Style="Keyword" />
 				<Item Keyword="TST" Style="Keyword" />
-				<Item Keyword="tst" Style="Keyword" />
 				<Item Keyword="UMAAL" Style="Keyword" />
 				<Item Keyword="UMLAL" Style="Keyword" />
 				<Item Keyword="UMULL" Style="Keyword" />
@@ -8664,7 +8633,7 @@
 		</ListDisplay>
 	</ClipWindow>
 	<ContextWindow
-		IsVisible="0"
+		IsVisible="1"
 		IsLocked="0"
 		IsMonoFontView="0"
 		ViewLineNumbers="1"
