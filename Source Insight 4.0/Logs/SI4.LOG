@@ -65,56 +65,55 @@ E 08/26/22 23:27:26: cannot load configuration
   08/26/22 23:31:25: Process ID 19484
 -------------------------------------------------------
 -------------------------------------------------------
-  08/27/22 11:31:43: Source Insight Starting
-  08/27/22 11:31:43: Version 4.00.0095 Built on 2018-08-21
-  08/27/22 11:31:43: Process ID 20844
+  08/27/22 11:38:28: Source Insight Starting
+  08/27/22 11:38:28: Version 4.00.0095 Built on 2018-08-21
+  08/27/22 11:38:28: Process ID 4940
 -------------------------------------------------------
-  08/27/22 11:31:43: Init: heap
-  08/27/22 11:31:43: Init: registry 1
-  08/27/22 11:31:43: Init: registry 2
-  08/27/22 11:31:43: Init: utils
-  08/27/22 11:31:43: Init: Windows version 10.0.19043
-  08/27/22 11:31:43: Init: screen
-  08/27/22 11:31:43: Init: environment
-  08/27/22 11:31:43: Init: COM begin
-  08/27/22 11:31:43: Init: COM end
-  08/27/22 11:31:43: CmdLine="C:\Program Files (x86)\Source Insight 4.0\sourceinsight4.exe" 
-  08/27/22 11:31:43: Init: DeskMgr
-  08/27/22 11:31:43: Init: licenseman
-  08/27/22 11:31:43: Loading license file
-  08/27/22 11:31:43: License OK: Standard License activated 2017-02-14 UTC
-  08/27/22 11:31:43: Init: config
-  08/27/22 11:31:43: Init: project db
-  08/27/22 11:31:43: Opening project D:\demo\demo.si4project\demo
-  08/27/22 11:31:43: Loading bookmarks from D:\demo\demo.si4project\demo.bookmarks.xml
-  08/27/22 11:31:43: Init: about
-  08/27/22 11:31:43: Loading config...
-  08/27/22 11:31:43: loading config file C:\Users\admin\Documents\Source Insight 4.0\Settings\config_all.xml
-  08/27/22 11:31:44: Loading layout file C:\Users\admin\Documents\Source Insight 4.0\Settings\layout.xml
-  08/27/22 11:31:44: Loading bookmarks from D:\demo\demo.si4project\demo.bookmarks.xml
-  08/27/22 11:31:44: Init: base project
-  08/27/22 11:31:44: Init: cmd line
-  08/27/22 11:31:45: Opening project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
-  08/27/22 11:31:45: Init: loading clips
-  08/27/22 11:31:45: Init: AppUpdater
-  08/27/22 11:31:45: Init: license
-  08/27/22 11:31:45: Loading license file
-  08/27/22 11:31:45: License OK: Standard License activated 2017-02-14 UTC
-  08/27/22 11:31:45: Init: main loop
-  08/27/22 11:31:47: Project Sync: checking for file changes...
-  08/27/22 11:32:07: Writing recovery file: C:\Users\admin\AppData\Local\Temp\TFXA7CD.tmp
-  08/27/22 11:32:09: Project Sync: checking for file changes...
-  08/27/22 11:32:09: Project Sync: reparsing files...
-  08/27/22 11:32:09: Project: 200 symbols, 351 index entries, 10 files
-  08/27/22 11:32:43: GHIDS begin
-  08/27/22 11:32:43: GHIDS end
-  08/27/22 11:33:50: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
-  08/27/22 11:33:50: Writing workspace file: D:\demo\demo.si4project\demo.siwork
-  08/27/22 11:33:50: Closing project D:\demo\demo.si4project\demo
-  08/27/22 11:33:50: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
-  08/27/22 11:33:50: Closing project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+  08/27/22 11:38:28: Init: heap
+  08/27/22 11:38:28: Init: registry 1
+  08/27/22 11:38:28: Init: registry 2
+  08/27/22 11:38:28: Init: utils
+  08/27/22 11:38:28: Init: Windows version 10.0.19043
+  08/27/22 11:38:28: Init: screen
+  08/27/22 11:38:28: Init: environment
+  08/27/22 11:38:28: Init: COM begin
+  08/27/22 11:38:28: Init: COM end
+  08/27/22 11:38:28: CmdLine="C:\Program Files (x86)\Source Insight 4.0\sourceinsight4.exe" 
+  08/27/22 11:38:28: Init: DeskMgr
+  08/27/22 11:38:28: Init: licenseman
+  08/27/22 11:38:28: Loading license file
+  08/27/22 11:38:28: License OK: Standard License activated 2017-02-14 UTC
+  08/27/22 11:38:28: Init: config
+  08/27/22 11:38:28: Init: project db
+  08/27/22 11:38:28: Opening project D:\demo\demo.si4project\demo
+  08/27/22 11:38:28: Loading bookmarks from D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 11:38:28: Init: about
+  08/27/22 11:38:28: Loading config...
+  08/27/22 11:38:28: loading config file C:\Users\admin\Documents\Source Insight 4.0\Settings\config_all.xml
+  08/27/22 11:38:29: Loading layout file C:\Users\admin\Documents\Source Insight 4.0\Settings\layout.xml
+  08/27/22 11:38:29: Loading bookmarks from D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 11:38:29: Init: base project
+  08/27/22 11:38:29: Init: cmd line
+  08/27/22 11:38:30: Opening project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+  08/27/22 11:38:30: Init: loading clips
+  08/27/22 11:38:30: Init: AppUpdater
+  08/27/22 11:38:30: Init: license
+  08/27/22 11:38:30: Loading license file
+  08/27/22 11:38:30: License OK: Standard License activated 2017-02-14 UTC
+  08/27/22 11:38:30: Init: main loop
+  08/27/22 11:38:39: Project Sync: checking for file changes...
+  08/27/22 11:38:39: Project Sync: reparsing files...
+  08/27/22 11:38:39: Project: 200 symbols, 351 index entries, 10 files
+  08/27/22 11:38:39: Project Sync: reparsing files...
+  08/27/22 11:38:39: Project: 200 symbols, 351 index entries, 10 files
+  08/27/22 11:38:53: Writing recovery file: C:\Users\admin\AppData\Local\Temp\TFXD94F.tmp
+  08/27/22 11:39:26: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 11:39:26: Writing workspace file: D:\demo\demo.si4project\demo.siwork
+  08/27/22 11:39:26: Closing project D:\demo\demo.si4project\demo
+  08/27/22 11:39:26: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 11:39:26: Closing project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
 -------------------------------------------------------
-  08/27/22 11:33:50: Source Insight Shutting Down
-  08/27/22 11:33:50: Version 4.00.0095 Built on 2018-08-21
-  08/27/22 11:33:50: Process ID 20844
+  08/27/22 11:39:26: Source Insight Shutting Down
+  08/27/22 11:39:26: Version 4.00.0095 Built on 2018-08-21
+  08/27/22 11:39:26: Process ID 4940
 -------------------------------------------------------
