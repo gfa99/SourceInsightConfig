@@ -16,19 +16,19 @@
 		<WindowTabOptions IsVisible="1" ShowPathInfo="1" SortOrder="Usage" />
 	</Options>
 	<PanelArea>
-		<WorkArea Left="0" Top="171" Right="2520" Bottom="1553" />
+		<WorkArea Left="0" Top="133" Right="2520" Bottom="1600" />
 		<TabTray IsVisible="0" />
 		<DockZones>
 			<Left>
-				<Rect Left="0" Top="178" Right="7" Bottom="1241" />
+				<Rect Left="0" Top="140" Right="7" Bottom="1269" />
 				<Contents/>
 			</Left>
 			<Top>
-				<Rect Left="0" Top="171" Right="2520" Bottom="178" />
+				<Rect Left="0" Top="133" Right="2520" Bottom="140" />
 				<Contents/>
 			</Top>
 			<Right>
-				<Rect Left="1932" Top="178" Right="2520" Bottom="1241" />
+				<Rect Left="1932" Top="140" Right="2520" Bottom="1269" />
 				<Contents>
 					<PanelHost
 						Title="Project Files"
@@ -39,7 +39,7 @@
 						PanelCount="4"
 						idPalActive="ProjectFilePanel"
 						>
-						<WindowRect Left="1939" Top="178" Right="2520" Bottom="1241" />
+						<WindowRect Left="1939" Top="140" Right="2520" Bottom="1269" />
 						<PredockRect Left="200" Top="200" Right="1300" Bottom="1200" />
 						<Panels>
 							<Panel
@@ -82,10 +82,10 @@
 				</Contents>
 			</Right>
 			<Bottom>
-				<Rect Left="0" Top="1241" Right="2520" Bottom="1553" />
+				<Rect Left="0" Top="1269" Right="2520" Bottom="1600" />
 				<Contents>
 					<PanelHost
-						Title="Context"
+						Title="hello"
 						id="ContextPanelHost"
 						IsHidden="0"
 						PctTrans="0"
@@ -93,7 +93,7 @@
 						PanelCount="1"
 						idPalActive="ContextPanel"
 						>
-						<WindowRect Left="0" Top="1248" Right="1260" Bottom="1553" />
+						<WindowRect Left="0" Top="1276" Right="1260" Bottom="1600" />
 						<PredockRect Left="910" Top="540" Right="1610" Bottom="1140" />
 						<Panels>
 							<Panel id="ContextPanel" IsHidden="0" ViewToolbar="1" />
@@ -108,7 +108,7 @@
 						PanelCount="1"
 						idPalActive="RelationPanel"
 						>
-						<WindowRect Left="1260" Top="1248" Right="2520" Bottom="1553" />
+						<WindowRect Left="1260" Top="1276" Right="2520" Bottom="1600" />
 						<PredockRect Left="200" Top="800" Right="900" Bottom="1600" />
 						<Panels>
 							<Panel
