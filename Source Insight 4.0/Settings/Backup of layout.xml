@@ -85,7 +85,7 @@
 				<Rect Left="0" Top="1241" Right="2520" Bottom="1553" />
 				<Contents>
 					<PanelHost
-						Title="Context"
+						Title="main.cpp"
 						id="ContextPanelHost"
 						IsHidden="0"
 						PctTrans="0"
@@ -131,7 +131,7 @@
 									>
 									<TrackingOptions tracktype="1" InComments="0" InStrings="0" InAnyFile="0" />
 									<SymbolTypes All="1" />
-									<CodeMetricsFilter CodeMetricsType="1" MinValue="0" MaxValue="0" />
+									<CodeMetricsFilter CodeMetricsType="0" MinValue="0" MaxValue="-1" />
 									<ViewRelationRules
 										ForTypes="Contents"
 										ForFunctions="References"

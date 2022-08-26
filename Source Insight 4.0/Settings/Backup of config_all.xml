@@ -101,9 +101,9 @@
 			/>
 		<DefaultPanelFontAndColor
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</DefaultPanelFontAndColor>
 	</DisplayPreferences>
 	<EditingPreferences
@@ -169,7 +169,7 @@
 		/>
 	<DisplayColors>
 		<Item Name="DefaultText" Color="#000000" />
-		<Item Name="WindowBackground" Color="#c9e0d7" />
+		<Item Name="WindowBackground" Color="#ffffff" />
 		<Item Name="SelectionBar" Color="#e6e6e6" />
 		<Item Name="PrintedDefaultText" Color="#000000" />
 		<Item Name="PrintedWindowBackground" Color="#ffffff" />
@@ -473,7 +473,9 @@
 			<item Command="Paste" Keycode="(S)Ins" />
 			<item Command="Cut" Keycode="(S)Del" />
 			<item Command="Select All" Keycode="(C)A" />
+			<item Command="Activate Menu Bar" Keycode="(A)" />
 			<item Command="Activate File Menu" Keycode="(A)F" />
+			<item Command="Activate Edit Menu" Keycode="(A)E" />
 			<item Command="Activate Search Menu" Keycode="(A)S" />
 			<item Command="Activate Project Menu" Keycode="(A)P" />
 			<item Command="Activate Window Menu" Keycode="(A)W" />
@@ -559,6 +561,7 @@
 			<item Command="Save All" Keycode="(CA)A" />
 			<item Command="Save As..." Keycode="(CS)S" />
 			<item Command="Reload File" Keycode="(CS)O" />
+			<item Command="Activate Project Symbol List" Keycode="(A)G" />
 			<item Command="Activate Symbol Window" Keycode="(A)L" />
 			<item Command="Renumber..." Keycode="(C)R" />
 			<item Command="Search..." Keycode="(C)F" />
@@ -626,10 +629,6 @@
 			<item Command="Tab" Keycode="Tab" />
 			<item Command="Back Tab" Keycode="(S)Tab" />
 			<item Command="Simple Tab" Keycode="(CA)Tab" />
-			<item Command="Go Back" Keycode="(A)B" />
-			<item Command="Go Forward" Keycode="(A)G" />
-			<item Command="Jump To Caller" Keycode="(A)C" />
-			<item Command="Jump To Definition" Keycode="(A)E" />
 		</Main>
 	</Keymaps>
 	<CustomCommands>
@@ -971,7 +970,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1006,7 +1005,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1041,7 +1040,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1076,12 +1075,12 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="C/C++ Source File"
-			FileFilter="*.c;*.h;*.cpp;*.hpp;*.cxx;*.hxx;*.s;*.S"
+			FileFilter="*.c;*.h;*.cpp;*.hpp;*.cxx;*.hxx;*.hh"
 			Language="C/C++ Language"
 			ParsePattern=""
 			WordWrap="0"
@@ -1093,7 +1092,7 @@
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
 			VisibleSpaces="0"
-			ShowLineNumbers="1"
+			ShowLineNumbers="0"
 			ShowRightMargin="0"
 			ShowPageBreaks="0"
 			UseSymbolPane="1"
@@ -1104,14 +1103,14 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="1"
+			IndentWidth="4"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1146,7 +1145,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1181,7 +1180,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1216,7 +1215,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1251,7 +1250,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1286,7 +1285,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1321,7 +1320,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1356,7 +1355,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1391,7 +1390,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1426,7 +1425,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1461,7 +1460,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1496,7 +1495,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1531,7 +1530,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1566,7 +1565,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1601,7 +1600,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1636,7 +1635,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1671,7 +1670,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1706,7 +1705,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1741,7 +1740,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1776,7 +1775,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1811,7 +1810,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1846,7 +1845,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1881,7 +1880,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1916,7 +1915,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1951,7 +1950,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -1986,7 +1985,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
@@ -2021,7 +2020,7 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Consolas" psize="11" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 	</FileTypes>
@@ -2055,17 +2054,17 @@
 		<Style Name="Declaration" Bold="1" TextColor="#000080" />
 		<Style
 			Name="Ref To Local"
-			TextColor="#008080"
 			ParentStyle="Reference"
+			TextColor="#008080"
 			/>
 		<Style Name="Reference" TextColor="#008000" />
 		<Style Name="Directive" ParentStyle="Control" />
 		<Style
 			Name="Line Number"
-			TextColor="#c0c0c0"
 			FontName="Consolas"
 			FontPitchFamily="1"
 			FontCharset="0"
+			TextColor="#c0c0c0"
 			/>
 		<Style
 			Name="Highlight"
@@ -2082,19 +2081,19 @@
 			/>
 		<Style
 			Name="Declare Template Parameter"
-			Underline="Single"
 			ParentStyle="Declaration"
+			Underline="Single"
 			/>
-		<Style Name="Ref to Parameter" Bold="1" ParentStyle="Ref To Local" />
+		<Style Name="Ref to Parameter" ParentStyle="Ref To Local" Bold="1" />
 		<Style Name="Declare Template" ParentStyle="Declare Function" />
 		<Style Name="Declare Package" ParentStyle="Declaration" />
 		<Style Name="Ref to Template" ParentStyle="Reference" />
 		<Style Name="Ref to Package" ParentStyle="Reference" />
 		<Style
 			Name="Ref to Template Parameter"
+			ParentStyle="Reference"
 			Underline="Single"
 			Bold="1"
-			ParentStyle="Reference"
 			/>
 		<Style Name="Selection" TextColor="#ffffff" BackColor="#000080" />
 		<Style Name="Declare Namespace" ParentStyle="Declaration" />
@@ -2105,22 +2104,22 @@
 		<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
 		<Style
 			Name="Declare Function"
+			ParentStyle="Declaration"
 			Scale="140"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Macro" ParentStyle="Declaration" />
 		<Style
 			Name="Declare Struct"
+			ParentStyle="Declaration"
 			Scale="140"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Union" ParentStyle="Declare Struct" />
 		<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
-		<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
+		<Style Name="Declare Class" ParentStyle="Declare Struct" Scale="120" />
 		<Style Name="Declare Var" ParentStyle="Declaration" />
 		<Style Name="Declare Constant" ParentStyle="Declaration" />
 		<Style Name="Declare Enum" ParentStyle="Declare Struct" />
@@ -2130,37 +2129,37 @@
 		<Style Name="Preprocessor" ParentStyle="Declaration" />
 		<Style
 			Name="Search Result Heading"
+			ParentStyle="Declaration"
 			Bold="1"
 			Underline="Single"
-			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Label"
+			ParentStyle="Declaration"
 			TextColor="#ff0000"
 			Scale="110"
 			Underline="Single"
-			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Interface" ParentStyle="Declare Class" />
 		<Style Name="Declare Resource" ParentStyle="Declaration" />
 		<Style Name="File" ParentStyle="Declaration" />
 		<Style Name="Declare Custom Tag" ParentStyle="Declaration" />
-		<Style Name="Ref to Func" Bold="1" ParentStyle="Reference" />
+		<Style Name="Ref to Func" ParentStyle="Reference" Bold="1" />
 		<Style Name="Ref to Macro" ParentStyle="Ref to Func" />
 		<Style Name="Ref to Struct" ParentStyle="Reference" />
 		<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
 		<Style Name="Ref to Typedef" ParentStyle="Ref to Struct" />
 		<Style
 			Name="Ref to Global Var"
+			ParentStyle="Reference"
 			Bold="1"
 			Italic="1"
 			TextColor="#800080"
-			ParentStyle="Reference"
 			/>
 		<Style
 			Name="Ref to Const"
-			TextColor="#ff0000"
 			ParentStyle="Reference"
+			TextColor="#ff0000"
 			/>
 		<Style Name="Ref to Enum" ParentStyle="Reference" />
 		<Style Name="Ref to Custom" ParentStyle="Reference" />
@@ -2178,55 +2177,55 @@
 		<Style Name="Ref to File" ParentStyle="Reference" />
 		<Style
 			Name="Comment Heading 1"
+			ParentStyle="Comment"
 			Bold="1"
 			Scale="150"
 			Underline="Thick"
 			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
-			ParentStyle="Comment"
 			/>
 		<Style
 			Name="Comment Heading 2"
+			ParentStyle="Comment"
 			Bold="1"
 			Scale="130"
 			Underline="Single"
 			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
-			ParentStyle="Comment"
 			/>
 		<Style
 			Name="Comment Heading 3"
+			ParentStyle="Comment"
 			Bold="1"
 			Scale="120"
 			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
-			ParentStyle="Comment"
 			/>
 		<Style
 			Name="Comment Heading 4"
+			ParentStyle="Comment"
 			Bold="1"
 			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
-			ParentStyle="Comment"
 			/>
-		<Style Name="Comment Right" Italic="1" ParentStyle="Comment" />
+		<Style Name="Comment Right" ParentStyle="Comment" Italic="1" />
 		<Style Name="Ref to Base Class" ParentStyle="Reference" />
 		<Style Name="Ref to Inline Type" ParentStyle="Reference" />
 		<Style Name="Inactive Code" TextColor="#808080" />
 		<Style
 			Name="Declare Parameter"
-			Underline="Single"
 			ParentStyle="Declaration"
+			Underline="Single"
 			/>
 		<Style
 			Name="Auto Annotations"
+			ParentStyle="Comment"
 			Scale="90"
 			TextColor="#808080"
-			ParentStyle="Comment"
 			/>
 		<Style Name="HTML or XML Element" />
 		<Style
@@ -2242,29 +2241,29 @@
 		<Style Name="Ref to Method Prototype" ParentStyle="Ref to Method" />
 		<Style
 			Name="Comment To Do"
+			ParentStyle="Comment"
 			Bold="1"
 			Scale="120"
 			BackColor="#ffff00"
 			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
-			ParentStyle="Comment"
 			/>
 		<Style Name="Ref to IDL Module" ParentStyle="Reference" />
 		<Style Name="Ref to IDL Library" ParentStyle="Reference" />
 		<Style
 			Name="Declare IDL Module"
+			ParentStyle="Declaration"
 			Scale="150"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Declare IDL Library"
+			ParentStyle="Declaration"
 			Scale="150"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style Name="Comment Single Line" ParentStyle="Comment" />
 		<Style Name="Comment Multi Line" ParentStyle="Comment" />
@@ -2276,8 +2275,8 @@
 		<Style Name="Standard Object" ParentStyle="Ref to Class" />
 		<Style
 			Name="Declare CSS Selector"
-			Scale="120"
 			ParentStyle="Declaration"
+			Scale="120"
 			/>
 		<Style Name="Declare C# Property" ParentStyle="Declaration" />
 		<Style Name="Ref to C# Property" ParentStyle="Reference" />
@@ -2296,14 +2295,14 @@
 		<Style Name="CDATA Section" TextColor="#808080" />
 		<Style
 			Name="Declare Type Parameter"
-			Underline="Single"
 			ParentStyle="Declaration"
+			Underline="Single"
 			/>
 		<Style
 			Name="Ref to Type Parameter"
+			ParentStyle="Reference"
 			Underline="Single"
 			Bold="1"
-			ParentStyle="Reference"
 			/>
 		<Style
 			Name="Snippet Input Field"
@@ -2326,30 +2325,30 @@
 			/>
 		<Style
 			Name="Declare VHDL Entity"
+			ParentStyle="Declaration"
 			Scale="140"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Declare VHDL Architecture"
+			ParentStyle="Declaration"
 			Scale="140"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style
 			Name="Declare VHDL Component"
+			ParentStyle="Declaration"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare VHDL Process" ParentStyle="Declare Function" />
 		<Style
 			Name="Declare VHDL Config"
+			ParentStyle="Declaration"
 			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			ParentStyle="Declaration"
 			/>
 		<Style Name="Ref to VHDL Entity" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Architecture" ParentStyle="Reference" />
@@ -2377,8 +2376,8 @@
 		NoWarnings="1"
 		RunInBackground="1"
 		RunEveryMinutes="60"
-		AddNewFiles="1"
-		RemoveOldFiles="1"
+		AddNewFiles="0"
+		RemoveOldFiles="0"
 		SyncOnStartup="1"
 		/>
 	<ProjectDefaults
@@ -2489,6 +2488,10 @@
 				<Item Keyword="inline" Style="Keyword" />
 				<Item Keyword="INT" Style="Keyword" />
 				<Item Keyword="int" Style="Keyword" />
+				<Item Keyword="int8_t" Style="Keyword" />
+				<Item Keyword="int16_t" Style="Keyword" />
+				<Item Keyword="int32_t" Style="Keyword" />
+				<Item Keyword="int64_t" Style="Keyword" />
 				<Item Keyword="interface" Style="Control" />
 				<Item Keyword="LONG" Style="Keyword" />
 				<Item Keyword="long" Style="Keyword" />
@@ -2539,10 +2542,6 @@
 				<Item Keyword="wchar_t" Style="Keyword" />
 				<Item Keyword="while" Style="Control" />
 				<Item Keyword="WORD" Style="Keyword" />
-				<Item Keyword="int8_t" Style="Keyword" />
-				<Item Keyword="int16_t" Style="Keyword" />
-				<Item Keyword="int32_t" Style="Keyword" />
-				<Item Keyword="int64_t" Style="Keyword" />
 			</Keywords>
 		</Language>
 		<Language
@@ -4221,6 +4220,10 @@
 				<Item Keyword="inline" Style="Keyword" />
 				<Item Keyword="INT" Style="Keyword" />
 				<Item Keyword="int" Style="Keyword" />
+				<Item Keyword="int8_t" Style="Keyword" />
+				<Item Keyword="int16_t" Style="Keyword" />
+				<Item Keyword="int32_t" Style="Keyword" />
+				<Item Keyword="int64_t" Style="Keyword" />
 				<Item Keyword="interface" Style="Control" />
 				<Item Keyword="LONG" Style="Keyword" />
 				<Item Keyword="long" Style="Keyword" />
@@ -4232,6 +4235,7 @@
 				<Item Keyword="__nullptr" Style="Null Value" />
 				<Item Keyword="near" Style="Keyword" />
 				<Item Keyword="new" Style="Control" />
+				<Item Keyword="noexcept" Style="Keyword" />
 				<Item Keyword="operator" Style="Keyword" />
 				<Item Keyword="override" Style="Keyword" />
 				<Item Keyword="PASCAL" Style="Keyword" />
@@ -4270,18 +4274,12 @@
 				<Item Keyword="unsigned" Style="Keyword" />
 				<Item Keyword="using" Style="Keyword" />
 				<Item Keyword="VOID" Style="Keyword" />
-				<Item Keyword="value" Style="Keyword" />
 				<Item Keyword="virtual" Style="Keyword" />
 				<Item Keyword="void" Style="Keyword" />
 				<Item Keyword="volatile" Style="Keyword" />
 				<Item Keyword="wchar_t" Style="Keyword" />
 				<Item Keyword="while" Style="Control" />
 				<Item Keyword="WORD" Style="Keyword" />
-				<Item Keyword="int8_t" Style="Keyword" />
-				<Item Keyword="int16_t" Style="Keyword" />
-				<Item Keyword="int32_t" Style="Keyword" />
-				<Item Keyword="int64_t" Style="Keyword" />
-				<Item Keyword="noexcept" Style="Keyword" />
 			</Keywords>
 		</Language>
 		<Language
@@ -4547,6 +4545,9 @@
 				<Item Keyword="ReformatBuffer" Style="System" />
 				<Item Keyword="Select Regular Expression Engine" Style="System" />
 				<Item Keyword="ExpandPathVariables" Style="System" />
+				<Item Keyword="GetRunCmdLineExitCode" Style="System" />
+				<Item Keyword="SetProjMasterFileList" Style="System" />
+				<Item Keyword="GetProjMasterFileList" Style="System" />
 			</Keywords>
 		</Language>
 		<Language
@@ -7177,6 +7178,7 @@
 				<Item Keyword="and" Style="Keyword" />
 				<Item Keyword="assert" Style="Keyword" />
 				<Item Keyword="def" Style="Keyword" />
+				<Item Keyword="async" Style="Keyword" />
 				<Item Keyword="del" Style="Keyword" />
 				<Item Keyword="exec" Style="Keyword" />
 				<Item Keyword="from" Style="Keyword" />
@@ -7197,7 +7199,6 @@
 				<Item Keyword="self" Style="Keyword" />
 				<Item Keyword="True" Style="Keyword" />
 				<Item Keyword="False" Style="Keyword" />
-				<Item Keyword="async" Style="Keyword" />
 			</Keywords>
 		</Language>
 		<Language
@@ -7518,7 +7519,7 @@
 			IgnoreNamespaces="0"
 			IgnoreJavaPackages="1"
 			SupportMicrochipC="0"
-			DefaultHTMLScriptLanguage="JavaScript"
+			DefaultHTMLScriptLanguage=""
 			/>
 	</ParsingOptions>
 	<Search
@@ -7632,91 +7633,91 @@
 			<Toolbars>
 				<Toolbar
 					Name="Browse"
-					Width="64"
+					Width="114"
 					Ordinal="0"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="File"
-					Width="168"
+					Width="286"
 					Ordinal="1"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Edit"
-					Width="144"
+					Width="245"
 					Ordinal="2"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Search"
-					Width="160"
+					Width="278"
 					Ordinal="3"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Navigation"
-					Width="112"
+					Width="196"
 					Ordinal="4"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Symbols"
-					Width="136"
+					Width="237"
 					Ordinal="5"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Window"
-					Width="112"
+					Width="196"
 					Ordinal="6"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Help"
-					Width="64"
+					Width="114"
 					Ordinal="7"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="View"
-					Width="280"
+					Width="483"
 					Ordinal="8"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Source Control"
-					Width="146"
+					Width="257"
 					Ordinal="9"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Build"
-					Width="112"
+					Width="196"
 					Ordinal="10"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Outline"
-					Width="112"
+					Width="196"
 					Ordinal="11"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Layout"
-					Width="160"
+					Width="278"
 					Ordinal="12"
 					IsVisible="1"
 					NewRow="0"
@@ -7732,8 +7733,8 @@
 		FooterPerColumn="1"
 		PrintWithColor="1"
 		PrintSyntaxFormatting="1"
-		CoverText="&amp;F"
-		HeaderText="&amp;F&amp;/&amp;D  &amp;T"
+		CoverText="&amp;F&amp;/&amp;D  &amp;T"
+		HeaderText="&amp;F"
 		FooterText="Page &amp;P"
 		Landscape="0"
 		LeftMargin="3600"
@@ -7753,9 +7754,9 @@
 		<SymbolTypes All="1" />
 	</ProjectReport>
 	<SymbolPane
-		Width="168"
+		Width="336"
 		TextColor="#000000"
-		BackColor="#c9e0d7"
+		BackColor="#c5d2de"
 		ShowChanges="1"
 		ShowLongFunctions="1"
 		>
@@ -8043,9 +8044,9 @@
 			>
 			<ListDisplay
 				TextColor="#000000"
-				BackColor="#c9e0d7"
+				BackColor="#ffffff"
 				>
-				<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+				<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 			</ListDisplay>
 		</SnippetWindowOptions>
 	</SnippetWindow>
@@ -8059,9 +8060,9 @@
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffc8"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ClipWindow>
 	<ContextWindow
@@ -8072,13 +8073,13 @@
 		ShowOverview="0"
 		PercentScale="100"
 		ShowBaseStructure="1"
-		BackColor="#c9e0d7"
+		BackColor="#ffffff"
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 		<TrackingOptions tracktype="1" InComments="0" InStrings="0" InAnyFile="0" />
 	</ContextWindow>
@@ -8094,9 +8095,9 @@
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</DirectoryCompareWindow>
 	<FileCompareWindow
@@ -8107,17 +8108,17 @@
 		ShowScrollBar="1"
 		ShowNestingLines="1"
 		PercentScale="100"
-		BackColor="#c9e0d7"
+		BackColor="#ffffff"
 		ShowSymbolPane="1"
-		SymbolPaneWidth="144"
+		SymbolPaneWidth="288"
 		DiffCmdLine="&quot;%PROGRAM_DIR%\sidiff.exe&quot; -C -b -n"
 		AllowEdits="0"
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</FileCompareWindow>
 	<ProjectFileWindow
@@ -8131,9 +8132,9 @@
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFileWindow>
 	<ProjectFileTypeWindow
@@ -8146,9 +8147,9 @@
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFileTypeWindow>
 	<ProjectFolderWindow
@@ -8160,9 +8161,9 @@
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFolderWindow>
 	<ProjectSymbolWindow
@@ -8170,71 +8171,13 @@
 		ShowFile="1"
 		Metric="Lines of Code"
 		>
-		<SymbolTypes>
-			<Type Name="Function" />
-			<Type Name="Macro" />
-			<Type Name="Structure" />
-			<Type Name="Union" />
-			<Type Name="Type Definition" />
-			<Type Name="Variable" />
-			<Type Name="Constant" />
-			<Type Name="Enumeration" />
-			<Type Name="Custom Tag" />
-			<Type Name="Editor Macro" />
-			<Type Name="Class" />
-			<Type Name="Member Function" />
-			<Type Name="Enum Constant" />
-			<Type Name="Function Prototype" />
-			<Type Name="#-Directive" />
-			<Type Name="Search Result" />
-			<Type Name="Label" />
-			<Type Name="Data Member" />
-			<Type Name="Interface" />
-			<Type Name="Resource" />
-			<Type Name="File" />
-			<Type Name="Directory" />
-			<Type Name="Function Template" />
-			<Type Name="Class Template" />
-			<Type Name="Package" />
-			<Type Name="Namespace" />
-			<Type Name="Token Macro" />
-			<Type Name="Code Block" />
-			<Type Name="Parameter" />
-			<Type Name="Parsing Error" />
-			<Type Name="HTML or XML Element" />
-			<Type Name="HTML Title" />
-			<Type Name="Member Function Prototype" />
-			<Type Name="IDL Module" />
-			<Type Name="IDL Library" />
-			<Type Name="IDL Interface" />
-			<Type Name="C++ Template" />
-			<Type Name="Template Parameter" />
-			<Type Name="CSS Rule Selector" />
-			<Type Name="C# Class Property" />
-			<Type Name="C# Indexer" />
-			<Type Name="C# Event" />
-			<Type Name="VHDL Entity" />
-			<Type Name="VHDL Architecture" />
-			<Type Name="VHDL Component" />
-			<Type Name="VHDL Process" />
-			<Type Name="VHDL Configuration" />
-			<Type Name="Type Reference" />
-			<Type Name="External Variable" />
-			<Type Name="Alias" />
-			<Type Name="Alias Target" />
-			<Type Name="Type Parameter" />
-			<Type Name="Macro Event" />
-			<Type Name="Captured Variable" />
-			<Type Name="Clip" />
-			<Type Name="Snippet" />
-			<Type Name="Editor Macro Function" />
-		</SymbolTypes>
+		<SymbolTypes All="1" />
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectSymbolWindow>
 	<ProjectSymbolTypeWindow
@@ -8242,71 +8185,13 @@
 		ShowFile="1"
 		Metric="Lines of Code"
 		>
-		<SymbolTypes>
-			<Type Name="Function" />
-			<Type Name="Macro" />
-			<Type Name="Structure" />
-			<Type Name="Union" />
-			<Type Name="Type Definition" />
-			<Type Name="Variable" />
-			<Type Name="Constant" />
-			<Type Name="Enumeration" />
-			<Type Name="Custom Tag" />
-			<Type Name="Editor Macro" />
-			<Type Name="Class" />
-			<Type Name="Member Function" />
-			<Type Name="Enum Constant" />
-			<Type Name="Function Prototype" />
-			<Type Name="#-Directive" />
-			<Type Name="Search Result" />
-			<Type Name="Label" />
-			<Type Name="Data Member" />
-			<Type Name="Interface" />
-			<Type Name="Resource" />
-			<Type Name="File" />
-			<Type Name="Directory" />
-			<Type Name="Function Template" />
-			<Type Name="Class Template" />
-			<Type Name="Package" />
-			<Type Name="Namespace" />
-			<Type Name="Token Macro" />
-			<Type Name="Code Block" />
-			<Type Name="Parameter" />
-			<Type Name="Parsing Error" />
-			<Type Name="HTML or XML Element" />
-			<Type Name="HTML Title" />
-			<Type Name="Member Function Prototype" />
-			<Type Name="IDL Module" />
-			<Type Name="IDL Library" />
-			<Type Name="IDL Interface" />
-			<Type Name="C++ Template" />
-			<Type Name="Template Parameter" />
-			<Type Name="CSS Rule Selector" />
-			<Type Name="C# Class Property" />
-			<Type Name="C# Indexer" />
-			<Type Name="C# Event" />
-			<Type Name="VHDL Entity" />
-			<Type Name="VHDL Architecture" />
-			<Type Name="VHDL Component" />
-			<Type Name="VHDL Process" />
-			<Type Name="VHDL Configuration" />
-			<Type Name="Type Reference" />
-			<Type Name="External Variable" />
-			<Type Name="Alias" />
-			<Type Name="Alias Target" />
-			<Type Name="Type Parameter" />
-			<Type Name="Macro Event" />
-			<Type Name="Captured Variable" />
-			<Type Name="Clip" />
-			<Type Name="Snippet" />
-			<Type Name="Editor Macro Function" />
-		</SymbolTypes>
+		<SymbolTypes All="1" />
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectSymbolTypeWindow>
 	<WindowListWindow
@@ -8316,9 +8201,9 @@
 		>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</WindowListWindow>
 	<RelationWindow>
@@ -8327,9 +8212,9 @@
 			>
 			<ListOptions
 				TextColor="#000000"
-				BackColor="#c9e0d7"
+				BackColor="#ffffff"
 				>
-				<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+				<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 			</ListOptions>
 			<GraphOptions
 				LayoutStyle="1"
@@ -8370,7 +8255,7 @@
 				>
 				<TrackingOptions tracktype="1" InComments="0" InStrings="0" InAnyFile="0" />
 				<SymbolTypes All="1" />
-				<CodeMetricsFilter CodeMetricsType="1" MinValue="0" MaxValue="0" />
+				<CodeMetricsFilter CodeMetricsType="0" MinValue="0" MaxValue="-1" />
 				<ViewRelationRules
 					ForTypes="Contents"
 					ForFunctions="References"
@@ -8410,9 +8295,9 @@
 		</AsciiModeFiles>
 		<ListDisplay
 			TextColor="#000000"
-			BackColor="#c9e0d7"
+			BackColor="#ffffff"
 			>
-			<Font name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</FTPWindow>
 </SourceInsightConfiguration>
