@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SourceInsightMasterConfiguration
-	AppVer="4.00.0095"
+	AppVer="4.00.0080"
 	AppVerMinReader="4.00.0032"
 	>
 	<!-- This is a Master configuration file. -->
@@ -20,49 +20,49 @@
 	<!-- Prefix with 'project_source:' the file is relative to the project source directory. -->
 	<!-- Prefix with 'project_data:' the file is relative to the project data directory. -->
 	<ConfigurationParts>
-		<GeneralPreferences file="config_all.xml" />
-		<DisplayPreferences file="config_all.xml" />
-		<EditingPreferences file="config_all.xml" />
-		<SyntaxFormatting file="config_all.xml" />
-		<SyntaxDecorations file="config_all.xml" />
-		<DisplayColors file="config_all.xml" />
-		<FilePreferences file="config_all.xml" />
-		<LookupPreferences file="config_all.xml" />
-		<Menus file="config_all.xml" />
-		<Keymaps file="config_all.xml" />
-		<CustomCommands file="config_all.xml" />
-		<FileTypes file="config_all.xml" />
-		<Styles file="config_all.xml" />
-		<FTPSites file="config_all.xml" />
-		<RemoteAccess file="config_all.xml" />
-		<ProjectSync file="config_all.xml" />
-		<ProjectDefaults file="config_all.xml" />
-		<Logging file="config_all.xml" />
-		<Languages file="config_all.xml" />
-		<ParsingOptions file="config_all.xml" />
-		<Search file="config_all.xml" />
-		<SearchWeb file="config_all.xml" />
-		<Toolbars file="config_all.xml" />
-		<PrintPageSetup file="config_all.xml" />
-		<ProjectReport file="config_all.xml" />
-		<SymbolPane file="config_all.xml" />
-		<ImportLibs file="config_all.xml" />
-		<ParseConditions file="config_all.xml" />
-		<SourceFormatter file="config_all.xml" />
-		<HtmlExport file="config_all.xml" />
-		<BookmarkWindow file="config_all.xml" />
-		<SnippetWindow file="config_all.xml" />
-		<ClipWindow file="config_all.xml" />
-		<ContextWindow file="config_all.xml" />
-		<DirectoryCompareWindow file="config_all.xml" />
-		<FileCompareWindow file="config_all.xml" />
-		<ProjectFileWindow file="config_all.xml" />
-		<ProjectFileTypeWindow file="config_all.xml" />
-		<ProjectFolderWindow file="config_all.xml" />
-		<ProjectSymbolWindow file="config_all.xml" />
-		<ProjectSymbolTypeWindow file="config_all.xml" />
-		<WindowListWindow file="config_all.xml" />
-		<RelationWindow file="config_all.xml" />
-		<FTPWindow file="config_all.xml" />
+		<GeneralPreferences file="config_general.xml" />
+		<DisplayPreferences file="config_display.xml" />
+		<EditingPreferences file="config_editing.xml" />
+		<SyntaxFormatting file="config_syntaxformatting.xml" />
+		<SyntaxDecorations file="config_syntaxdecorations.xml" />
+		<DisplayColors file="config_displaycolors.xml" />
+		<FilePreferences file="config_fileprefs.xml" />
+		<LookupPreferences file="config_lookupprefs.xml" />
+		<Menus file="config_menus.xml" />
+		<Keymaps file="config_keymaps.xml" />
+		<CustomCommands file="config_customcommands.xml" />
+		<FileTypes file="config_filetypes.xml" />
+		<Styles file="config_styles.xml" />
+		<FTPSites file="config_ftpsites.xml" />
+		<RemoteAccess file="config_remoteaccess.xml" />
+		<ProjectSync file="config_projectsync.xml" />
+		<ProjectDefaults file="config_projectdefaults.xml" />
+		<Logging file="config_logging.xml" />
+		<Languages file="config_languages.xml" />
+		<ParsingOptions file="config_parsing.xml" />
+		<Search file="config_search.xml" />
+		<SearchWeb file="config_websearch.xml" />
+		<Toolbars file="config_toolbars.xml" />
+		<PrintPageSetup file="config_pagesetup.xml" />
+		<ProjectReport file="config_projectreport.xml" />
+		<SymbolPane file="config_symbolpane.xml" />
+		<ImportLibs file="config_importlibs.xml" />
+		<ParseConditions file="config_parseconditions.xml" />
+		<SourceFormatter file="config_sourceformatter.xml" />
+		<HtmlExport file="config_htmlexport.xml" />
+		<BookmarkWindow file="config_bookmarkwindow.xml" />
+		<SnippetWindow file="config_snippetwindow.xml" />
+		<ClipWindow file="config_clipwindow.xml" />
+		<ContextWindow file="config_contextwindow.xml" />
+		<DirectoryCompareWindow file="config_dircompare.xml" />
+		<FileCompareWindow file="config_filecompare.xml" />
+		<ProjectFileWindow file="config_projfilewindow.xml" />
+		<ProjectFileTypeWindow file="config_projfiletypewindow.xml" />
+		<ProjectFolderWindow file="config_projfolderwindow.xml" />
+		<ProjectSymbolWindow file="config_projsymbolwindow.xml" />
+		<ProjectSymbolTypeWindow file="config_projsymboltypewindow.xml" />
+		<WindowListWindow file="config_windowlistwindow.xml" />
+		<RelationWindow file="config_relationwindow.xml" />
+		<FTPWindow file="config_ftpwindow.xml" />
 	</ConfigurationParts>
 </SourceInsightMasterConfiguration>
