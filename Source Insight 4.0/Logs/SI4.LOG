@@ -1,0 +1,66 @@
+-------------------------------------------------------
+  08/26/22 23:27:25: Source Insight Starting
+  08/26/22 23:27:25: Version 4.00.0095 Built on 2018-08-21
+  08/26/22 23:27:25: Process ID 19484
+-------------------------------------------------------
+  08/26/22 23:27:25: Init: heap
+  08/26/22 23:27:25: Init: registry 1
+  08/26/22 23:27:25: Init: registry 2
+  08/26/22 23:27:25: Init: utils
+  08/26/22 23:27:25: Init: Windows version 10.0.19043
+  08/26/22 23:27:25: Init: screen
+  08/26/22 23:27:25: Init: environment
+  08/26/22 23:27:25: Init: COM begin
+  08/26/22 23:27:25: Init: COM end
+  08/26/22 23:27:25: CmdLine="C:\Program Files (x86)\Source Insight 4.0\sourceinsight4.exe" 
+  08/26/22 23:27:25: Init: DeskMgr
+  08/26/22 23:27:25: Init: licenseman
+  08/26/22 23:27:25: Loading license file
+  08/26/22 23:27:25: License OK: Standard License activated 2017-02-14 UTC
+  08/26/22 23:27:26: Init: config
+  08/26/22 23:27:26: Init: project db
+  08/26/22 23:27:26: Init: about
+  08/26/22 23:27:26: Loading config...
+  08/26/22 23:27:26: loading config file C:\Users\admin\Documents\Source Insight 4.0\Settings\config_all.xml
+E 08/26/22 23:27:26: cannot load configuration
+  08/26/22 23:27:26: Init: base project
+  08/26/22 23:27:28: Project Sync: checking for file changes...
+  08/26/22 23:27:28: Project Sync: reparsing files...
+  08/26/22 23:27:28: Project: 0 symbols, 0 index entries, 2 files
+  08/26/22 23:27:28: Project: 1125 symbols, 4942 index entries, 2 files
+  08/26/22 23:27:28: Project: 1140 symbols, 4994 index entries, 2 files
+  08/26/22 23:27:28: Closing project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+  08/26/22 23:27:28: Init: cmd line
+  08/26/22 23:27:28: Init: loading clips
+  08/26/22 23:27:28: Init: AppUpdater
+  08/26/22 23:27:28: Init: license
+  08/26/22 23:27:28: Loading license file
+  08/26/22 23:27:28: License OK: Standard License activated 2017-02-14 UTC
+  08/26/22 23:27:28: Init: main loop
+  08/26/22 23:28:25: GHIDS begin
+  08/26/22 23:28:25: GHIDS end
+  08/26/22 23:29:31: Project Sync: checking for file changes...
+  08/26/22 23:30:45: Project Sync: reparsing files...
+  08/26/22 23:30:45: Project: 0 symbols, 0 index entries, 10 files
+  08/26/22 23:30:45: Project: 4 symbols, 4 index entries, 10 files
+  08/26/22 23:30:45: Project: 9 symbols, 10 index entries, 10 files
+  08/26/22 23:30:45: Project: 12 symbols, 17 index entries, 10 files
+  08/26/22 23:30:45: Project: 22 symbols, 50 index entries, 10 files
+  08/26/22 23:30:45: Project: 24 symbols, 52 index entries, 10 files
+  08/26/22 23:30:45: Project: 183 symbols, 305 index entries, 10 files
+  08/26/22 23:30:45: Project: 194 symbols, 336 index entries, 10 files
+  08/26/22 23:30:45: Project: 197 symbols, 343 index entries, 10 files
+  08/26/22 23:30:45: Project: 198 symbols, 346 index entries, 10 files
+  08/26/22 23:30:45: Project: 200 symbols, 351 index entries, 10 files
+  08/26/22 23:30:48: Writing recovery file: C:\Users\admin\AppData\Local\Temp\TFX4696.tmp
+  08/26/22 23:30:59: Opening project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+  08/26/22 23:31:25: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
+  08/26/22 23:31:25: Writing workspace file: D:\demo\demo.si4project\demo.siwork
+  08/26/22 23:31:25: Closing project D:\demo\demo.si4project\demo
+  08/26/22 23:31:25: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
+  08/26/22 23:31:25: Closing project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+-------------------------------------------------------
+  08/26/22 23:31:25: Source Insight Shutting Down
+  08/26/22 23:31:25: Version 4.00.0095 Built on 2018-08-21
+  08/26/22 23:31:25: Process ID 19484
+-------------------------------------------------------
