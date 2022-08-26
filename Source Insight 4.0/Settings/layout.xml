@@ -50,9 +50,6 @@
 								<Columns>
 									<Column0 ID="0" Width="240" />
 									<Column1 ID="1" Width="192" />
-									<Column2 ID="2" Width="192" />
-									<Column3 ID="3" Width="192" />
-									<Column4 ID="4" Width="192" />
 								</Columns>
 							</Panel>
 							<Panel
@@ -85,7 +82,7 @@
 				<Rect Left="0" Top="1241" Right="2520" Bottom="1553" />
 				<Contents>
 					<PanelHost
-						Title="hello"
+						Title="Context"
 						id="ContextPanelHost"
 						IsHidden="0"
 						PctTrans="0"

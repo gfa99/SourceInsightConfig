@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceInsightConfiguration
+	AppVer="4.00.0093"
+	AppVerMinReader="4.00.0032"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="ARM Assembly"
+			Comment=""
+			CaseSensitive="1"
+			CPreprocessor="1"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="1"
+			AllowSmartTab="1"
+			DetectNumbers="1"
+			CHexNum="1"
+			IntelHexNum="1"
+			MotorolaHexNum="1"
+			BasicHexNum="1"
+			IntelOctalNum="1"
+			QOctalNum="1"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Constant"
+					Pattern="([A-Za-z0-9_]+)=."
+					RegexType="Perl Compatible"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="^([_A-Za-z][A-Za-z0-9_]+):"
+					RegexType="Perl Compatible multi-line"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="^ENTRY\(([_A-Za-z][_A-Za-z0-9]+)\)"
+					RegexType="Perl Compatible multi-line"
+					/>
+				<Expression
+					SymbolType="Macro"
+					Pattern="(?&lt;=\.macro.)([_A-Za-z][_A-Za-z0-9]+)"
+					RegexType="Perl Compatible multi-line"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString=";"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="//"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Multi Line"
+					StyleDelimiter="1"
+					StartString="/*"
+					EndString="*/"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="@"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="!" Style="Delimiter" />
+				<Item Keyword="#" Style="Delimiter" />
+				<Item Keyword="%" Style="Delimiter" />
+				<Item Keyword="&amp;" Style="Delimiter" />
+				<Item Keyword="&apos;" Style="Delimiter" />
+				<Item Keyword="(" Style="Delimiter" />
+				<Item Keyword=")" Style="Delimiter" />
+				<Item Keyword="*" Style="Delimiter" />
+				<Item Keyword="+" Style="Delimiter" />
+				<Item Keyword="," Style="Delimiter" />
+				<Item Keyword="-" Style="Delimiter" />
+				<Item Keyword=".align" Style="Keyword" />
+				<Item Keyword=".ascii" Style="Keyword" />
+				<Item Keyword=".BREAK" Style="Keyword" />
+				<Item Keyword=".bss" Style="Keyword" />
+				<Item Keyword=".byte" Style="Keyword" />
+				<Item Keyword=".CODE" Style="Keyword" />
+				<Item Keyword=".CONST" Style="Keyword" />
+				<Item Keyword=".CONTINUE" Style="Keyword" />
+				<Item Keyword=".CREF" Style="Keyword" />
+				<Item Keyword=".data" Style="Keyword" />
+				<Item Keyword=".DATA?" Style="Keyword" />
+				<Item Keyword=".define" Style="Keyword" />
+				<Item Keyword=".ELSE" Style="Keyword" />
+				<Item Keyword=".ELSEIF" Style="Keyword" />
+				<Item Keyword=".ENDIF" Style="Keyword" />
+				<Item Keyword=".ENDW" Style="Keyword" />
+				<Item Keyword=".ERR" Style="Keyword" />
+				<Item Keyword=".ERRB" Style="Keyword" />
+				<Item Keyword=".ERRDEF" Style="Keyword" />
+				<Item Keyword=".ERRDEFI" Style="Keyword" />
+				<Item Keyword=".ERRE" Style="Keyword" />
+				<Item Keyword=".ERRIDNI" Style="Keyword" />
+				<Item Keyword=".ERRNB" Style="Keyword" />
+				<Item Keyword=".ERRNDEF" Style="Keyword" />
+				<Item Keyword=".ERRNZ" Style="Keyword" />
+				<Item Keyword=".fill" Style="Keyword" />
+				<Item Keyword=".globl" Style="Keyword" />
+				<Item Keyword=".IF" Style="Keyword" />
+				<Item Keyword=".long" Style="Keyword" />
+				<Item Keyword=".MODEL" Style="Keyword" />
+				<Item Keyword=".NOCREF" Style="Keyword" />
+				<Item Keyword=".quad" Style="Keyword" />
+				<Item Keyword=".RADIX" Style="Keyword" />
+				<Item Keyword=".REPEAT" Style="Keyword" />
+				<Item Keyword=".STACK" Style="Keyword" />
+				<Item Keyword=".text" Style="Keyword" />
+				<Item Keyword=".UNTIL" Style="Keyword" />
+				<Item Keyword=".UNTILCXZ" Style="Keyword" />
+				<Item Keyword=".WHILE" Style="Keyword" />
+				<Item Keyword=".word" Style="Keyword" />
+				<Item Keyword="/" Style="Delimiter" />
+				<Item Keyword=":" Style="Delimiter" />
+				<Item Keyword=";" Style="Delimiter" />
+				<Item Keyword="&lt;" Style="Delimiter" />
+				<Item Keyword="=" Style="Delimiter" />
+				<Item Keyword="&gt;" Style="Delimiter" />
+				<Item Keyword="?" Style="Delimiter" />
+				<Item Keyword="@CATSTR" Style="Keyword" />
+				<Item Keyword="@INSTR" Style="Keyword" />
+				<Item Keyword="@SIZESTR" Style="Keyword" />
+				<Item Keyword="@SUBSTR" Style="Keyword" />
+				<Item Keyword="ABS" Style="Keyword" />
+				<Item Keyword="ACS" Style="Keyword" />
+				<Item Keyword="ADC" Style="Keyword" />
+				<Item Keyword="ADD" Style="Keyword" />
+				<Item Keyword="add" Style="Keyword" />
+				<Item Keyword="ADDLO" Style="Keyword" />
+				<Item Keyword="addlo" Style="Keyword" />
+				<Item Keyword="ADF" Style="Keyword" />
+				<Item Keyword="adr" Style="Keyword" />
+				<Item Keyword="ADR" Style="Keyword" />
+				<Item Keyword="ADRL" Style="Keyword" />
+				<Item Keyword="ALIGN" Style="Keyword" />
+				<Item Keyword="and" Style="Keyword" />
+				<Item Keyword="AND" Style="Keyword" />
+				<Item Keyword="ANDS" Style="Keyword" />
+				<Item Keyword="ands" Style="Keyword" />
+				<Item Keyword="ASL" Style="Keyword" />
+				<Item Keyword="ASN" Style="Keyword" />
+				<Item Keyword="ASR" Style="Keyword" />
+				<Item Keyword="ATN" Style="Keyword" />
+				<Item Keyword="b" Style="Keyword" />
+				<Item Keyword="B" Style="Keyword" />
+				<Item Keyword="BEQ" Style="Keyword" />
+				<Item Keyword="beq" Style="Keyword" />
+				<Item Keyword="bgt" Style="Keyword" />
+				<Item Keyword="BIC" Style="Keyword" />
+				<Item Keyword="bic" Style="Keyword" />
+				<Item Keyword="BKPT" Style="Keyword" />
+				<Item Keyword="bl" Style="Keyword" />
+				<Item Keyword="BL" Style="Keyword" />
+				<Item Keyword="BLO" Style="Keyword" />
+				<Item Keyword="blo" Style="Keyword" />
+				<Item Keyword="BLX" Style="Keyword" />
+				<Item Keyword="BNE" Style="Keyword" />
+				<Item Keyword="bne" Style="Keyword" />
+				<Item Keyword="bx" Style="Keyword" />
+				<Item Keyword="BX" Style="Keyword" />
+				<Item Keyword="CDP" Style="Keyword" />
+				<Item Keyword="CDP2" Style="Keyword" />
+				<Item Keyword="CLZ" Style="Keyword" />
+				<Item Keyword="clz" Style="Keyword" />
+				<Item Keyword="CMF" Style="Keyword" />
+				<Item Keyword="CMN" Style="Keyword" />
+				<Item Keyword="CMP" Style="Keyword" />
+				<Item Keyword="cmp" Style="Keyword" />
+				<Item Keyword="CNF" Style="Keyword" />
+				<Item Keyword="COS" Style="Keyword" />
+				<Item Keyword="cps" Style="Keyword" />
+				<Item Keyword="CPS" Style="Keyword" />
+				<Item Keyword="DCB" Style="Keyword" />
+				<Item Keyword="DCD" Style="Keyword" />
+				<Item Keyword="DCF" Style="Keyword" />
+				<Item Keyword="DCFD" Style="Keyword" />
+				<Item Keyword="DCFS" Style="Keyword" />
+				<Item Keyword="DCS" Style="Keyword" />
+				<Item Keyword="DCW" Style="Keyword" />
+				<Item Keyword="define" Style="Keyword" />
+				<Item Keyword="defined" Style="Directive" />
+				<Item Keyword="dmb" Style="Keyword" />
+				<Item Keyword="DMB" Style="Keyword" />
+				<Item Keyword="DSB" Style="Keyword" />
+				<Item Keyword="dsb" Style="Keyword" />
+				<Item Keyword="DVF" Style="Keyword" />
+				<Item Keyword="elif" Style="Directive" />
+				<Item Keyword="else" Style="Directive" />
+				<Item Keyword="endif" Style="Directive" />
+				<Item Keyword="EOR" Style="Keyword" />
+				<Item Keyword="EQUB" Style="Keyword" />
+				<Item Keyword="EQUD" Style="Keyword" />
+				<Item Keyword="EQUF" Style="Keyword" />
+				<Item Keyword="EQUFD" Style="Keyword" />
+				<Item Keyword="EQUFS" Style="Keyword" />
+				<Item Keyword="EQUS" Style="Keyword" />
+				<Item Keyword="EQUW" Style="Keyword" />
+				<Item Keyword="EXP" Style="Keyword" />
+				<Item Keyword="FABS" Style="Keyword" />
+				<Item Keyword="FADD" Style="Keyword" />
+				<Item Keyword="FCMP" Style="Keyword" />
+				<Item Keyword="FCPY" Style="Keyword" />
+				<Item Keyword="FCVTDS" Style="Keyword" />
+				<Item Keyword="FCVTSD" Style="Keyword" />
+				<Item Keyword="FDIV" Style="Keyword" />
+				<Item Keyword="FDV" Style="Keyword" />
+				<Item Keyword="FIX" Style="Keyword" />
+				<Item Keyword="FLD" Style="Keyword" />
+				<Item Keyword="FLDMDB" Style="Keyword" />
+				<Item Keyword="FLDMIA" Style="Keyword" />
+				<Item Keyword="FLT" Style="Keyword" />
+				<Item Keyword="FMAC" Style="Keyword" />
+				<Item Keyword="FMDHR" Style="Keyword" />
+				<Item Keyword="FMDLR" Style="Keyword" />
+				<Item Keyword="FML" Style="Keyword" />
+				<Item Keyword="FMRDH" Style="Keyword" />
+				<Item Keyword="FMRDL" Style="Keyword" />
+				<Item Keyword="FMRS" Style="Keyword" />
+				<Item Keyword="FMRX" Style="Keyword" />
+				<Item Keyword="FMSC" Style="Keyword" />
+				<Item Keyword="FMSR" Style="Keyword" />
+				<Item Keyword="FMSTAT" Style="Keyword" />
+				<Item Keyword="FMUL" Style="Keyword" />
+				<Item Keyword="FMXR" Style="Keyword" />
+				<Item Keyword="FNEG" Style="Keyword" />
+				<Item Keyword="FNMAC" Style="Keyword" />
+				<Item Keyword="FNMSC" Style="Keyword" />
+				<Item Keyword="FNMUL" Style="Keyword" />
+				<Item Keyword="FRD" Style="Keyword" />
+				<Item Keyword="FSITO" Style="Keyword" />
+				<Item Keyword="FSQRT" Style="Keyword" />
+				<Item Keyword="FST" Style="Keyword" />
+				<Item Keyword="FSTMDB" Style="Keyword" />
+				<Item Keyword="FSTMIA" Style="Keyword" />
+				<Item Keyword="FSUB" Style="Keyword" />
+				<Item Keyword="FTOSI" Style="Keyword" />
+				<Item Keyword="FTOUI" Style="Keyword" />
+				<Item Keyword="FUITO" Style="Keyword" />
+				<Item Keyword="if" Style="Directive" />
+				<Item Keyword="ifdef" Style="Directive" />
+				<Item Keyword="ifndef" Style="Directive" />
+				<Item Keyword="include" Style="Keyword" />
+				<Item Keyword="ISB" Style="Keyword" />
+				<Item Keyword="isb" Style="Keyword" />
+				<Item Keyword="LDC" Style="Keyword" />
+				<Item Keyword="LDC2" Style="Keyword" />
+				<Item Keyword="LDF" Style="Keyword" />
+				<Item Keyword="LDM" Style="Keyword" />
+				<Item Keyword="LDMFD" Style="Keyword" />
+				<Item Keyword="ldmfd" Style="Keyword" />
+				<Item Keyword="ldmia" Style="Keyword" />
+				<Item Keyword="LDMIA" Style="Keyword" />
+				<Item Keyword="ldr" Style="Keyword" />
+				<Item Keyword="LDR" Style="Keyword" />
+				<Item Keyword="LDRB" Style="Keyword" />
+				<Item Keyword="LDRH" Style="Keyword" />
+				<Item Keyword="ldrh" Style="Keyword" />
+				<Item Keyword="LDRSB" Style="Keyword" />
+				<Item Keyword="LDRSH" Style="Keyword" />
+				<Item Keyword="LFM" Style="Keyword" />
+				<Item Keyword="LGN" Style="Keyword" />
+				<Item Keyword="LOG" Style="Keyword" />
+				<Item Keyword="LSL" Style="Keyword" />
+				<Item Keyword="mcr" Style="Keyword" />
+				<Item Keyword="MCR" Style="Keyword" />
+				<Item Keyword="MCR2" Style="Keyword" />
+				<Item Keyword="mcrne" Style="Keyword" />
+				<Item Keyword="MCRR" Style="Keyword" />
+				<Item Keyword="mcrr" Style="Keyword" />
+				<Item Keyword="MIA" Style="Keyword" />
+				<Item Keyword="MIAPH" Style="Keyword" />
+				<Item Keyword="MLA" Style="Keyword" />
+				<Item Keyword="MNF" Style="Keyword" />
+				<Item Keyword="MOV" Style="Keyword" />
+				<Item Keyword="mov" Style="Keyword" />
+				<Item Keyword="movne" Style="Keyword" />
+				<Item Keyword="movs" Style="Keyword" />
+				<Item Keyword="MOVS" Style="Keyword" />
+				<Item Keyword="movw" Style="Keyword" />
+				<Item Keyword="MRC" Style="Keyword" />
+				<Item Keyword="mrc" Style="Keyword" />
+				<Item Keyword="MRC2" Style="Keyword" />
+				<Item Keyword="mrcne" Style="Keyword" />
+				<Item Keyword="mrrc" Style="Keyword" />
+				<Item Keyword="MRRC" Style="Keyword" />
+				<Item Keyword="mrs" Style="Keyword" />
+				<Item Keyword="MRS" Style="Keyword" />
+				<Item Keyword="msr" Style="Keyword" />
+				<Item Keyword="MSR" Style="Keyword" />
+				<Item Keyword="MUF" Style="Keyword" />
+				<Item Keyword="MUL" Style="Keyword" />
+				<Item Keyword="MVF" Style="Keyword" />
+				<Item Keyword="MVN" Style="Keyword" />
+				<Item Keyword="mvn" Style="Keyword" />
+				<Item Keyword="NEG" Style="Keyword" />
+				<Item Keyword="NOP" Style="Keyword" />
+				<Item Keyword="NRM" Style="Keyword" />
+				<Item Keyword="OPT" Style="Keyword" />
+				<Item Keyword="orr" Style="Keyword" />
+				<Item Keyword="ORR" Style="Keyword" />
+				<Item Keyword="ORRNE" Style="Keyword" />
+				<Item Keyword="orrne" Style="Keyword" />
+				<Item Keyword="PLD" Style="Keyword" />
+				<Item Keyword="POL" Style="Keyword" />
+				<Item Keyword="POP" Style="Keyword" />
+				<Item Keyword="pop" Style="Keyword" />
+				<Item Keyword="POW" Style="Keyword" />
+				<Item Keyword="pragma" Style="Keyword" />
+				<Item Keyword="push" Style="Keyword" />
+				<Item Keyword="PUSH" Style="Keyword" />
+				<Item Keyword="QADD" Style="Keyword" />
+				<Item Keyword="QDADD" Style="Keyword" />
+				<Item Keyword="QDSUB" Style="Keyword" />
+				<Item Keyword="QSUB" Style="Keyword" />
+				<Item Keyword="R0" Style="Keyword" />
+				<Item Keyword="R1" Style="Keyword" />
+				<Item Keyword="R10" Style="Keyword" />
+				<Item Keyword="R11" Style="Keyword" />
+				<Item Keyword="R12" Style="Keyword" />
+				<Item Keyword="R13" Style="Keyword" />
+				<Item Keyword="R14" Style="Keyword" />
+				<Item Keyword="R2" Style="Keyword" />
+				<Item Keyword="R3" Style="Keyword" />
+				<Item Keyword="R4" Style="Keyword" />
+				<Item Keyword="R5" Style="Keyword" />
+				<Item Keyword="R6" Style="Keyword" />
+				<Item Keyword="R7" Style="Keyword" />
+				<Item Keyword="R8" Style="Keyword" />
+				<Item Keyword="R9" Style="Keyword" />
+				<Item Keyword="RDF" Style="Keyword" />
+				<Item Keyword="ret" Style="Keyword" />
+				<Item Keyword="RFC" Style="Keyword" />
+				<Item Keyword="RFS" Style="Keyword" />
+				<Item Keyword="RMF" Style="Keyword" />
+				<Item Keyword="RND" Style="Keyword" />
+				<Item Keyword="ROR" Style="Keyword" />
+				<Item Keyword="RPW" Style="Keyword" />
+				<Item Keyword="RRX" Style="Keyword" />
+				<Item Keyword="RSB" Style="Keyword" />
+				<Item Keyword="RSC" Style="Keyword" />
+				<Item Keyword="RSF" Style="Keyword" />
+				<Item Keyword="SBC" Style="Keyword" />
+				<Item Keyword="SFM" Style="Keyword" />
+				<Item Keyword="SIN" Style="Keyword" />
+				<Item Keyword="SMLA" Style="Keyword" />
+				<Item Keyword="SMLAD" Style="Keyword" />
+				<Item Keyword="SMLAL" Style="Keyword" />
+				<Item Keyword="SMLALD" Style="Keyword" />
+				<Item Keyword="SMLAW" Style="Keyword" />
+				<Item Keyword="SMLSD" Style="Keyword" />
+				<Item Keyword="SMLSLD" Style="Keyword" />
+				<Item Keyword="SMMLA" Style="Keyword" />
+				<Item Keyword="SMMLS" Style="Keyword" />
+				<Item Keyword="SMMUL" Style="Keyword" />
+				<Item Keyword="SMUAD" Style="Keyword" />
+				<Item Keyword="SMUL" Style="Keyword" />
+				<Item Keyword="SMULL" Style="Keyword" />
+				<Item Keyword="SMULW" Style="Keyword" />
+				<Item Keyword="SMUSD" Style="Keyword" />
+				<Item Keyword="SQT" Style="Keyword" />
+				<Item Keyword="SSAT" Style="Keyword" />
+				<Item Keyword="SSAT16" Style="Keyword" />
+				<Item Keyword="STC" Style="Keyword" />
+				<Item Keyword="STC2" Style="Keyword" />
+				<Item Keyword="STF" Style="Keyword" />
+				<Item Keyword="STM" Style="Keyword" />
+				<Item Keyword="stmdb" Style="Keyword" />
+				<Item Keyword="STMDB" Style="Keyword" />
+				<Item Keyword="stmfd" Style="Keyword" />
+				<Item Keyword="STMFD" Style="Keyword" />
+				<Item Keyword="stmia" Style="Keyword" />
+				<Item Keyword="STMIA" Style="Keyword" />
+				<Item Keyword="STR" Style="Keyword" />
+				<Item Keyword="str" Style="Keyword" />
+				<Item Keyword="STRB" Style="Keyword" />
+				<Item Keyword="STRH" Style="Keyword" />
+				<Item Keyword="STRLO" Style="Keyword" />
+				<Item Keyword="strlo" Style="Keyword" />
+				<Item Keyword="STRSB" Style="Keyword" />
+				<Item Keyword="STRSH" Style="Keyword" />
+				<Item Keyword="SUB" Style="Keyword" />
+				<Item Keyword="sub" Style="Keyword" />
+				<Item Keyword="subs" Style="Keyword" />
+				<Item Keyword="SUF" Style="Keyword" />
+				<Item Keyword="SWI" Style="Keyword" />
+				<Item Keyword="SWP" Style="Keyword" />
+				<Item Keyword="TAN" Style="Keyword" />
+				<Item Keyword="teq" Style="Keyword" />
+				<Item Keyword="TEQ" Style="Keyword" />
+				<Item Keyword="tst" Style="Keyword" />
+				<Item Keyword="TST" Style="Keyword" />
+				<Item Keyword="UMAAL" Style="Keyword" />
+				<Item Keyword="UMLAL" Style="Keyword" />
+				<Item Keyword="UMULL" Style="Keyword" />
+				<Item Keyword="undef" Style="Keyword" />
+				<Item Keyword="URD" Style="Keyword" />
+				<Item Keyword="USAD8" Style="Keyword" />
+				<Item Keyword="USADA8" Style="Keyword" />
+				<Item Keyword="USAT" Style="Keyword" />
+				<Item Keyword="USAT16" Style="Keyword" />
+				<Item Keyword="VMSR" Style="Keyword" />
+				<Item Keyword="vmsr" Style="Keyword" />
+				<Item Keyword="WFC" Style="Keyword" />
+				<Item Keyword="WFE" Style="Keyword" />
+				<Item Keyword="wfe" Style="Keyword" />
+				<Item Keyword="wfi" Style="Keyword" />
+				<Item Keyword="WFI" Style="Keyword" />
+				<Item Keyword="WFINE" Style="Keyword" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>

@@ -117,3 +117,51 @@ E 08/26/22 23:27:26: cannot load configuration
   08/27/22 15:39:37: Version 4.00.0095 Built on 2018-08-21
   08/27/22 15:39:37: Process ID 20172
 -------------------------------------------------------
+-------------------------------------------------------
+  08/27/22 15:54:53: Source Insight Starting
+  08/27/22 15:54:53: Version 4.00.0095 Built on 2018-08-21
+  08/27/22 15:54:53: Process ID 8876
+-------------------------------------------------------
+  08/27/22 15:54:53: Init: heap
+  08/27/22 15:54:53: Init: registry 1
+  08/27/22 15:54:53: Init: registry 2
+  08/27/22 15:54:53: Init: utils
+  08/27/22 15:54:53: Init: Windows version 10.0.19043
+  08/27/22 15:54:53: Init: screen
+  08/27/22 15:54:53: Init: environment
+  08/27/22 15:54:53: Init: COM begin
+  08/27/22 15:54:53: Init: COM end
+  08/27/22 15:54:53: CmdLine="C:\Program Files (x86)\Source Insight 4.0\sourceinsight4.exe" 
+  08/27/22 15:54:53: Init: DeskMgr
+  08/27/22 15:54:53: Init: licenseman
+  08/27/22 15:54:53: Loading license file
+  08/27/22 15:54:53: License OK: Standard License activated 2017-02-14 UTC
+  08/27/22 15:54:53: Init: config
+  08/27/22 15:54:53: Init: project db
+  08/27/22 15:54:53: Opening project D:\demo\demo.si4project\demo
+  08/27/22 15:54:53: Loading bookmarks from D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 15:54:53: Init: about
+  08/27/22 15:54:53: Loading config...
+  08/27/22 15:54:53: loading config file C:\Users\admin\Documents\Source Insight 4.0\Settings\config_all.xml
+  08/27/22 15:54:54: Loading layout file C:\Users\admin\Documents\Source Insight 4.0\Settings\layout.xml
+  08/27/22 15:54:54: Loading bookmarks from D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 15:54:54: Init: base project
+  08/27/22 15:54:54: Init: cmd line
+  08/27/22 15:54:55: Opening project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+  08/27/22 15:54:55: Init: loading clips
+  08/27/22 15:54:55: Init: AppUpdater
+  08/27/22 15:54:55: Init: license
+  08/27/22 15:54:55: Loading license file
+  08/27/22 15:54:55: License OK: Standard License activated 2017-02-14 UTC
+  08/27/22 15:54:55: Init: main loop
+  08/27/22 15:55:13: Writing recovery file: C:\Users\admin\AppData\Local\Temp\TFX87BD.tmp
+  08/27/22 15:55:21: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 15:55:21: Writing workspace file: D:\demo\demo.si4project\demo.siwork
+  08/27/22 15:55:21: Closing project D:\demo\demo.si4project\demo
+  08/27/22 15:55:21: Saving bookmarks to D:\demo\demo.si4project\demo.bookmarks.xml
+  08/27/22 15:55:21: Closing project C:\Users\admin\Documents\Source Insight 4.0\Projects\Base\Base
+-------------------------------------------------------
+  08/27/22 15:55:21: Source Insight Shutting Down
+  08/27/22 15:55:21: Version 4.00.0095 Built on 2018-08-21
+  08/27/22 15:55:21: Process ID 8876
+-------------------------------------------------------
