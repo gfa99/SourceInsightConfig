@@ -7,7 +7,7 @@
 	<!-- www.sourceinsight.com -->
 
 	<GeneralPreferences
-		OpenDlgProjOnly="0"
+		OpenDlgProjOnly="1"
 		UseGlobalConfig="1"
 		SleepInBackground="1"
 		UseSourceTips="1"
@@ -18,7 +18,7 @@
 		EnableEvents="0"
 		WinHelpPath=""
 		HTMLHelpPath=""
-		CheckForUpdates="1"
+		CheckForUpdates="0"
 		/>
 	<DisplayPreferences>
 		<GeneralDisplayOptions
@@ -27,12 +27,12 @@
 			MainToolBar="1"
 			HorizScrollBar="1"
 			VertScrollBar="1"
-			EnhancedVertScrollBar="0"
+			EnhancedVertScrollBar="1"
 			ScalePercent="100"
-			PopupToolbar="0"
+			PopupToolbar="1"
 			SortWindowMenuByName="0"
 			SmoothScrolling="1"
-			AccelSmoothScrolling="1"
+			AccelSmoothScrolling="0"
 			ShowChangemarks="1"
 			ShowBookmarks="1"
 			PreserveFileCase="1"
@@ -61,7 +61,7 @@
 			ShowSearchBar="0"
 			ShowSearchProjBar="0"
 			EnableTransparentPanels="0"
-			EnableOverviews="0"
+			EnableOverviews="1"
 			/>
 		<ScrollBarOptions
 			AllowScaling="0"
@@ -74,10 +74,10 @@
 			EnableHoverMsgs="1"
 			MirrorView="0"
 			percentWidth="100"
-			UseBackColor="0"
+			UseBackColor="1"
 			MarksColor="#c0c0c0"
 			TextColor="#c0c0c0"
-			BackColor="#e6e6e6"
+			BackColor="#d6edd8"
 			ThumbColor="#808080"
 			/>
 		<OverviewOptions
@@ -91,7 +91,7 @@
 			ShowChangeMarks="1"
 			ShowNestingLines="1"
 			ShowRefHighlights="0"
-			PercentScale="20"
+			PercentScale="10"
 			DefaultWidth="750"
 			UseTextColor="0"
 			UseBackColor="0"
@@ -100,10 +100,10 @@
 			TextColor="#000000"
 			/>
 		<DefaultPanelFontAndColor
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</DefaultPanelFontAndColor>
 	</DisplayPreferences>
 	<EditingPreferences
@@ -168,18 +168,18 @@
 		ScaleNestedParens="1"
 		/>
 	<DisplayColors>
-		<Item Name="DefaultText" Color="#7d80a8" />
-		<Item Name="WindowBackground" Color="#1e2127" />
-		<Item Name="SelectionBar" Color="#292929" />
+		<Item Name="DefaultText" Color="#000000" />
+		<Item Name="WindowBackground" Color="#d6edd8" />
+		<Item Name="SelectionBar" Color="#e6e6e6" />
 		<Item Name="PrintedDefaultText" Color="#000000" />
 		<Item Name="PrintedWindowBackground" Color="#ffffff" />
 		<Item Name="ChangeMarks" Color="#ffff00" />
 		<Item Name="SavedChangeMarks" Color="#bdddba" />
-		<Item Name="CurrentLineIndicator" Color="#8080ff" />
-		<Item Name="EndofFile" Color="#1e1e1e" />
-		<Item Name="ApplicationBackground" Color="#000000" />
-		<Item Name="FrameText" Color="#9ba4b3" />
-		<Item Name="FrameBackground" Color="#3b414c" />
+		<Item Name="CurrentLineIndicator" Color="#e6e6e6" />
+		<Item Name="EndofFile" Color="#c0c0c0" />
+		<Item Name="ApplicationBackground" Color="#ababab" />
+		<Item Name="FrameText" Color="#000000" />
+		<Item Name="FrameBackground" Color="#dbe2ea" />
 	</DisplayColors>
 	<FilePreferences
 		ShareFiles="1"
@@ -195,13 +195,13 @@
 		SaveKeepsUndo="1"
 		SaveOverRO="0"
 		SavePromptOnModified="1"
-		TrimWhiteSpace="0"
+		TrimWhiteSpace="1"
 		EditReadOnly="0"
 		ConfirmDelete="1"
 		BlockBinaryFiles="1"
 		OpenBackupsAsReadOnly="1"
-		DefaultFileFormat="1"
-		DefaultEncoding="936"
+		DefaultFileFormat="2"
+		DefaultEncoding="65001"
 		FileOpenAction="Project File List"
 		/>
 	<LookupPreferences
@@ -238,8 +238,8 @@
 			<item Command="Save All" />
 			<item Command="Save A Copy..." />
 			<item Command="Save Selection..." />
-			<item Command="Save As Encoding..." />
 			<item Command="Save New Backup File" />
+			<item Command="Save As Encoding..." />
 			<item Command="---Menu Separator---" />
 			<item Command="Print..." />
 			<item Command="Page Setup..." />
@@ -424,10 +424,8 @@
 	</Menus>
 	<Keymaps>
 		<Main>
-			<item Command="Symbol Info..." Keycode="(C)mouse(R+SEL)" />
-			<item Command="Go Back" Keycode="(A)1" />
-			<item Command="Go Forward" Keycode="(A)2" />
-			<item Command="Delete Line" Keycode="(C)D" />
+			<item Command="SearchBackward" Keycode="(C)Up" Allocated="1" />
+			<item Command="SearchForward" Keycode="(C)Down" Allocated="1" />
 			<item Command="Load Layout A" Keycode="(CS)F1" />
 			<item Command="Load Layout B" Keycode="(CS)F2" />
 			<item Command="Load Layout C" Keycode="(CS)F3" />
@@ -509,10 +507,8 @@
 			<item Command="Page Down" Keycode="(N)PgDn" />
 			<item Command="Scroll Half Page Down" Keycode="(C)PgDn" />
 			<item Command="Scroll Half Page Down" Keycode="(CN)PgDn" />
-			<item Command="Scroll Half Page Down" Keycode="(N)*" />
 			<item Command="Scroll Half Page Up" Keycode="(C)PgUp" />
 			<item Command="Scroll Half Page Up" Keycode="(CN)PgUp" />
-			<item Command="Scroll Half Page Up" Keycode="(N)/" />
 			<item Command="Scroll Line Up" Keycode="(A)Up" />
 			<item Command="Scroll Line Down" Keycode="(A)Down" />
 			<item Command="Scroll Left" Keycode="(A)Left" />
@@ -535,8 +531,6 @@
 			<item Command="Cursor Right" Keycode="(N)Right" />
 			<item Command="Word Left" Keycode="(C)Left" />
 			<item Command="Word Right" Keycode="(C)Right" />
-			<item Command="Function Up" Keycode="(N)-" />
-			<item Command="Function Down" Keycode="(N)+" />
 			<item Command="Select Block" Keycode="(C)-" />
 			<item Command="Select Match" Keycode="(A)=" />
 			<item Command="Go To Next Change" Keycode="(AN)+" />
@@ -564,7 +558,6 @@
 			<item Command="Save All" Keycode="(CA)A" />
 			<item Command="Save As..." Keycode="(CS)S" />
 			<item Command="Reload File" Keycode="(CS)O" />
-			<item Command="Activate Project Symbol List" Keycode="(A)G" />
 			<item Command="Activate Symbol Window" Keycode="(A)L" />
 			<item Command="Renumber..." Keycode="(C)R" />
 			<item Command="Search..." Keycode="(C)F" />
@@ -573,7 +566,6 @@
 			<item Command="Search Web..." Keycode="(CA)W" />
 			<item Command="Activate Search Bar" Keycode="(AS)F" />
 			<item Command="Activate Project Search Bar" Keycode="(AS)P" />
-			<item Command="Replace..." Keycode="(C)H" />
 			<item Command="Replace Files..." Keycode="(CS)H" />
 			<item Command="Go To Line..." Keycode="(C)G" />
 			<item Command="Jump To Link" Keycode="(C)L" />
@@ -593,7 +585,6 @@
 			<item Command="File Type Options..." Keycode="(A)Y" />
 			<item Command="Smart Rename..." Keycode="(C)&apos;" />
 			<item Command="Complete Snippet" Keycode="(C)E" />
-			<item Command="Complete Symbol" Keycode="(C)8" />
 			<item Command="Incremental Search..." Keycode="(C)," />
 			<item Command="New Project..." Keycode="(AS)N" />
 			<item Command="Open Project..." Keycode="(AS)P" />
@@ -604,7 +595,6 @@
 			<item Command="Backspace" Keycode="BackSpace" />
 			<item Command="Backspace" Keycode="(S)BackSpace" />
 			<item Command="Delete Character" Keycode="Del" />
-			<item Command="Delete Character" Keycode="(N)Del" />
 			<item Command="Copy Line" Keycode="(C)K" />
 			<item Command="Copy Line Right" Keycode="(CS)K" />
 			<item Command="Paste Line" Keycode="(C)P" />
@@ -614,13 +604,10 @@
 			<item Command="Cut Word" Keycode="(C)," />
 			<item Command="Insert Line Before Next" Keycode="(C)Space" />
 			<item Command="Join Lines" Keycode="(C)J" />
-			<item Command="Insert New Line" Keycode="(C)Enter" />
 			<item Command="Cut To Clip..." Keycode="(CS)X" />
 			<item Command="Copy To Clip..." Keycode="(C)Del" />
 			<item Command="Paste From Clip..." Keycode="(C)Ins" />
 			<item Command="Restore Lines" Keycode="(A)D" />
-			<item Command="Drag Line Up" Keycode="(C)Up" />
-			<item Command="Drag Line Down" Keycode="(C)Down" />
 			<item Command="Redraw Screen" Keycode="(CA)Space" />
 			<item Command="Copy" Keycode="mouse(LR)" />
 			<item Command="Select To" Keycode="(S)mouse(L)" />
@@ -631,8 +618,12 @@
 			<item Command="Tab" Keycode="Tab" />
 			<item Command="Back Tab" Keycode="(S)Tab" />
 			<item Command="Simple Tab" Keycode="(CA)Tab" />
-			<item Command="Search Backward" Keycode="" />
-			<item Command="Search Forward" Keycode="" />
+			<item Command="Activate Project Symbol List" Keycode="(A)G" />
+			<item Command="Symbol Info..." Keycode="(C)mouse(R+SEL)" />
+			<item Command="Highlight Word" Keycode="(C)H" />
+			<item Command="Clear Highlights" Keycode="(CA)H" />
+			<item Command="AutoExpand" Keycode="(C)Enter" Allocated="1" />
+			<item Command="MultiLineComment" Keycode="(C)Q" Allocated="1" />
 		</Main>
 	</Keymaps>
 	<CustomCommands>
@@ -770,6 +761,63 @@
 			ParsePattern=""
 			/>
 		<Command
+			Name="PC-LINT Multi-files"
+			RunText="C:\PcLintAssistant\Run.bat 1"
+			WorkingDir=""
+			NormalWindow="0"
+			CaptureOutput="1"
+			PasteOutput="0"
+			SaveFilesFirst="1"
+			PauseWhenDone="0"
+			BeepWhenDone="0"
+			WaitUntilDone="0"
+			ReloadFiles="0"
+			ExitToWindows="0"
+			ParseOutput="1"
+			LineThenFile="0"
+			RegexType="Source Insight"
+			Preset="0"
+			ParsePattern="^Error \([^ ]*\) \([0-9]+\)"
+			/>
+		<Command
+			Name="PC-LINT Quick"
+			RunText="C:\PcLintAssistant\Run.bat 0"
+			WorkingDir=""
+			NormalWindow="0"
+			CaptureOutput="1"
+			PasteOutput="0"
+			SaveFilesFirst="1"
+			PauseWhenDone="0"
+			BeepWhenDone="0"
+			WaitUntilDone="0"
+			ReloadFiles="0"
+			ExitToWindows="0"
+			ParseOutput="1"
+			LineThenFile="0"
+			RegexType="Source Insight"
+			Preset="0"
+			ParsePattern="^Error \([^ ]*\) \([0-9]+\)"
+			/>
+		<Command
+			Name="PC-LINT Single-file"
+			RunText="C:\PcLintAssistant\Run.bat %f"
+			WorkingDir=""
+			NormalWindow="0"
+			CaptureOutput="1"
+			PasteOutput="0"
+			SaveFilesFirst="1"
+			PauseWhenDone="0"
+			BeepWhenDone="0"
+			WaitUntilDone="0"
+			ReloadFiles="0"
+			ExitToWindows="0"
+			ParseOutput="1"
+			LineThenFile="0"
+			RegexType="Source Insight"
+			Preset="0"
+			ParsePattern="^Error \([^ ]*\) \([0-9]+\)"
+			/>
+		<Command
 			Name="Preview in Web Browser"
 			RunText="ShellExecute  iexplore %f"
 			WorkingDir=""
@@ -852,6 +900,25 @@
 			NormalWindow="1"
 			CaptureOutput="1"
 			PasteOutput="1"
+			SaveFilesFirst="0"
+			PauseWhenDone="0"
+			BeepWhenDone="0"
+			WaitUntilDone="0"
+			ReloadFiles="0"
+			ExitToWindows="0"
+			ParseOutput="0"
+			LineThenFile="0"
+			RegexType="Source Insight"
+			Preset="0"
+			ParsePattern=""
+			/>
+		<Command
+			Name="SourceFormatX"
+			RunText="&quot;C:\Program Files\SourceFormatX\SourceFormatX.exe&quot;   %f"
+			WorkingDir="C:\Program Files\SourceFormatX\"
+			NormalWindow="1"
+			CaptureOutput="0"
+			PasteOutput="0"
 			SaveFilesFirst="0"
 			PauseWhenDone="0"
 			BeepWhenDone="0"
@@ -967,20 +1034,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Custom Command Output"
@@ -1014,13 +1076,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Search Results"
@@ -1047,65 +1104,20 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="C Source File"
-			FileFilter=""
+			FileFilter="*.c;*.h"
 			Language="ANSI C Language"
-			ParsePattern=""
-			WordWrap="0"
-			ExpandTabs="0"
-			EnterKeyIsEOL="1"
-			StatusbarMode="0"
-			AddToProject="1"
-			EmulateScreenFontsForPrinting="1"
-			LineUpWhiteSpace="1"
-			VisibleTabs="0"
-			VisibleSpaces="0"
-			ShowLineNumbers="0"
-			ShowRightMargin="0"
-			ShowPageBreaks="0"
-			UseSymbolPane="1"
-			UseOverview="1"
-			AllowAutocomplete="1"
-			AllowSmartPaste="1"
-			AllowSnippets="1"
-			ShowRefHighlights="0"
-			TabWidth="4"
-			MarginWidth="120"
-			IndentWidth="4"
-			AutoInsertPairs="1"
-			ParsePatternSymbolType=""
-			AutoIndentMode="2"
-			IndentOpenBrace="1"
-			IndentCloseBrace="1"
-			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-		</Type>
-		<Type
-			Name="C/C++ Source File"
-			FileFilter="*.c;*.h;*.cpp;*.hpp;*.cxx;*.hxx"
-			Language="C/C++ Language"
 			ParsePattern=""
 			WordWrap="0"
 			ExpandTabs="1"
@@ -1122,25 +1134,55 @@
 			UseSymbolPane="1"
 			UseOverview="1"
 			AllowAutocomplete="1"
+			AllowSmartPaste="0"
+			AllowSnippets="1"
+			ShowRefHighlights="0"
+			TabWidth="4"
+			MarginWidth="120"
+			IndentWidth="1"
+			AutoInsertPairs="0"
+			ParsePatternSymbolType=""
+			AutoIndentMode="1"
+			IndentOpenBrace="0"
+			IndentCloseBrace="0"
+			>
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+		</Type>
+		<Type
+			Name="C/C++ Source File"
+			FileFilter="*.c;*.h;*.cpp;*.hpp;*.cxx;*.hxx"
+			Language="C/C++ Language"
+			ParsePattern=""
+			WordWrap="0"
+			ExpandTabs="1"
+			EnterKeyIsEOL="1"
+			StatusbarMode="0"
+			AddToProject="0"
+			EmulateScreenFontsForPrinting="1"
+			LineUpWhiteSpace="1"
+			VisibleTabs="0"
+			VisibleSpaces="0"
+			ShowLineNumbers="1"
+			ShowRightMargin="0"
+			ShowPageBreaks="0"
+			UseSymbolPane="1"
+			UseOverview="1"
+			AllowAutocomplete="1"
 			AllowSmartPaste="1"
 			AllowSnippets="1"
-			ShowRefHighlights="1"
+			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
 			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
-			IndentOpenBrace="0"
-			IndentCloseBrace="0"
+			IndentOpenBrace="1"
+			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="C# Source File"
@@ -1151,7 +1193,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1167,31 +1209,26 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Objective-C File"
-			FileFilter="*.m;*.mm"
+			FileFilter="*.m"
 			Language="Objective-C"
 			ParsePattern=""
 			WordWrap="0"
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1207,20 +1244,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Python File"
@@ -1231,7 +1263,7 @@
 			ExpandTabs="1"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1247,20 +1279,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Interface Definition File"
@@ -1271,7 +1298,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1287,20 +1314,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="x86 Asm Source File"
@@ -1311,7 +1333,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1327,20 +1349,15 @@
 			ShowRefHighlights="0"
 			TabWidth="8"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Java Source File"
@@ -1351,7 +1368,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1367,20 +1384,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="JavaScript File"
@@ -1391,7 +1403,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1407,20 +1419,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Perl Source File"
@@ -1431,7 +1438,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1447,20 +1454,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="PHP File"
@@ -1471,7 +1473,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1487,20 +1489,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Active Server Page"
@@ -1511,7 +1508,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1527,20 +1524,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Visual Basic Source File"
@@ -1551,7 +1543,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1567,20 +1559,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Batch File"
@@ -1591,7 +1578,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1607,20 +1594,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType="Custom Tag"
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="INI File"
@@ -1631,7 +1613,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1647,20 +1629,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType="Custom Tag"
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Link Def File"
@@ -1671,7 +1648,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1687,20 +1664,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Make File"
@@ -1711,7 +1683,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1727,20 +1699,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="JSON File"
@@ -1751,7 +1718,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1767,20 +1734,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Resource File"
@@ -1791,7 +1753,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1807,20 +1769,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Source Insight Macro File"
@@ -1854,13 +1811,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Plain Text"
@@ -1871,7 +1823,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="0"
 			VisibleTabs="0"
@@ -1887,20 +1839,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="HTML File"
@@ -1911,7 +1858,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1927,20 +1874,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Cascading Style Sheet"
@@ -1951,7 +1893,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -1967,20 +1909,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Output File"
@@ -2014,13 +1951,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Token Macro File"
@@ -2054,13 +1986,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="XML File"
@@ -2071,7 +1998,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -2087,20 +2014,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="VHDL File"
@@ -2111,7 +2033,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -2127,20 +2049,15 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="SI Tags File"
@@ -2151,7 +2068,7 @@
 			ExpandTabs="0"
 			EnterKeyIsEOL="1"
 			StatusbarMode="0"
-			AddToProject="1"
+			AddToProject="0"
 			EmulateScreenFontsForPrinting="1"
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
@@ -2167,63 +2084,127 @@
 			ShowRefHighlights="0"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="0"
 			ParsePatternSymbolType=""
 			AutoIndentMode="1"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont
-				name="Source Code Pro Medium"
-				psize="11"
-				fpfamily="49"
-				charset="0"
-				/>
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+		</Type>
+		<Type
+			Name="ASM Source File"
+			FileFilter="*.s;*.S"
+			Language="ARM Assembly"
+			ParsePattern=""
+			WordWrap="0"
+			ExpandTabs="0"
+			EnterKeyIsEOL="1"
+			StatusbarMode="0"
+			AddToProject="1"
+			EmulateScreenFontsForPrinting="1"
+			LineUpWhiteSpace="1"
+			VisibleTabs="0"
+			VisibleSpaces="0"
+			ShowLineNumbers="1"
+			ShowRightMargin="0"
+			ShowPageBreaks="0"
+			UseSymbolPane="0"
+			UseOverview="0"
+			AllowAutocomplete="1"
+			AllowSmartPaste="0"
+			AllowSnippets="1"
+			ShowRefHighlights="0"
+			TabWidth="4"
+			MarginWidth="120"
+			IndentWidth="1"
+			AutoInsertPairs="0"
+			ParsePatternSymbolType=""
+			AutoIndentMode="1"
+			IndentOpenBrace="1"
+			IndentCloseBrace="1"
+			>
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+		</Type>
+		<Type
+			Name="Device Tree Source"
+			FileFilter="*.dts;*.dtsi"
+			Language="C/C++ Language"
+			ParsePattern=""
+			WordWrap="0"
+			ExpandTabs="1"
+			EnterKeyIsEOL="1"
+			StatusbarMode="0"
+			AddToProject="1"
+			EmulateScreenFontsForPrinting="1"
+			LineUpWhiteSpace="1"
+			VisibleTabs="0"
+			VisibleSpaces="0"
+			ShowLineNumbers="1"
+			ShowRightMargin="0"
+			ShowPageBreaks="0"
+			UseSymbolPane="1"
+			UseOverview="1"
+			AllowAutocomplete="1"
+			AllowSmartPaste="0"
+			AllowSnippets="1"
+			ShowRefHighlights="0"
+			TabWidth="4"
+			MarginWidth="120"
+			IndentWidth="1"
+			AutoInsertPairs="0"
+			ParsePatternSymbolType=""
+			AutoIndentMode="1"
+			IndentOpenBrace="1"
+			IndentCloseBrace="1"
+			>
+			<ScreenFont name="Consolas" psize="9" fpfamily="49" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 	</FileTypes>
 	<Styles
 		StyleAppVer="4.00.0095"
 		>
-		<Style Name="Default Text" Underline="None" />
+		<Style Name="Default Text" TextColor="#000000" />
 		<Style
 			Name="Number"
-			TextColor="#c66b2e"
-			FontName="YaHei Consolas Hybrid"
-			FontPitchFamily="49"
+			TextColor="#ff0000"
+			FontName="Consolas"
+			FontPitchFamily="1"
 			FontCharset="0"
-			ParentStyle="Ref to Const"
 			/>
-		<Style Name="Operator" TextColor="#b55cd2" />
-		<Style Name="Delimiter" TextColor="#9ba1b1" />
-		<Style Name="Comment" TextColor="#beb7ff" />
-		<Style Name="String" FixedWhiteSpace="0" TextColor="#87b966" />
-		<Style Name="Keyword" TextColor="#b55cd2" />
-		<Style Name="Control" Bold="0" TextColor="#c069d7" />
-		<Style Name="Special" Bold="1" Italic="1" />
-		<Style Name="Boolean" TextColor="#ff6fff" />
-		<Style Name="Debug" Italic="1" Underline="Dotted" TextColor="#d64b59" />
+		<Style Name="Operator" TextColor="#008000" />
+		<Style Name="Delimiter" TextColor="#800080" />
+		<Style Name="Comment" TextColor="#800080" />
 		<Style
-			Name="Null Value"
-			TextColor="#c66b2e"
-			ParentStyle="Ref to Const"
+			Name="String"
+			TextColor="#000080"
+			FixedWhiteSpace="0"
+			BackColor="#ffffbb"
 			/>
-		<Style Name="System" ParentStyle="Reference" />
-		<Style Name="Declaration" Bold="0" TextColor="#a5acba" />
+		<Style Name="Keyword" TextColor="#008000" />
+		<Style Name="Control" TextColor="#000080" Bold="1" />
+		<Style Name="Special" TextColor="#800080" Bold="1" Italic="1" />
+		<Style Name="Boolean" TextColor="#800080" />
+		<Style Name="Debug" TextColor="#ff0000" Italic="1" Underline="Dotted" />
+		<Style Name="Null Value" TextColor="#ff0000" />
+		<Style Name="System" TextColor="#008000" />
+		<Style Name="Declaration" Bold="1" TextColor="#000080" />
 		<Style
 			Name="Ref To Local"
-			TextColor="#9ba1b1"
+			TextColor="#008080"
 			ParentStyle="Reference"
 			/>
-		<Style Name="Reference" TextColor="#46a0ac" />
+		<Style Name="Reference" TextColor="#008000" />
 		<Style Name="Directive" ParentStyle="Control" />
 		<Style
 			Name="Line Number"
-			FontSizeQps="36"
-			TextColor="#808080"
-			FontName="YaHei Consolas Hybrid"
-			FontPitchFamily="49"
+			TextColor="#c0c0c0"
+			FontName="Consolas"
+			FontPitchFamily="1"
 			FontCharset="0"
 			/>
 		<Style
@@ -2244,12 +2225,7 @@
 			Underline="Single"
 			ParentStyle="Declaration"
 			/>
-		<Style
-			Name="Ref to Parameter"
-			Bold="0"
-			Underline="Dotted"
-			ParentStyle="Ref To Local"
-			/>
+		<Style Name="Ref to Parameter" Bold="1" ParentStyle="Ref To Local" />
 		<Style Name="Declare Template" ParentStyle="Declare Function" />
 		<Style Name="Declare Package" ParentStyle="Declaration" />
 		<Style Name="Ref to Template" ParentStyle="Reference" />
@@ -2260,55 +2236,35 @@
 			Bold="1"
 			ParentStyle="Reference"
 			/>
-		<Style Name="Selection" TextColor="#ffffff" BackColor="#0080c0" />
+		<Style Name="Selection" TextColor="#ffffff" BackColor="#000080" />
 		<Style Name="Declare Namespace" ParentStyle="Declaration" />
 		<Style Name="Ref to Namespace" ParentStyle="Reference" />
-		<Style
-			Name="Declare Local"
-			Bold="0"
-			TextColor="#b4bbc6"
-			ParentStyle="Declaration"
-			/>
+		<Style Name="Declare Local" ParentStyle="Declaration" />
 		<Style Name="Declare Member" ParentStyle="Declaration" />
-		<Style
-			Name="Declare Method"
-			CharSpacing="10"
-			ParentStyle="Declare Function"
-			/>
+		<Style Name="Declare Method" ParentStyle="Declare Function" />
 		<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
 		<Style
 			Name="Declare Function"
-			Scale="110"
-			Bold="1"
+			Scale="140"
+			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			TextColor="#407fdd"
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Macro" ParentStyle="Declaration" />
 		<Style
 			Name="Declare Struct"
 			Scale="140"
+			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
-			TextColor="#5dc2c8"
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Union" ParentStyle="Declare Struct" />
 		<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
 		<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
 		<Style Name="Declare Var" ParentStyle="Declaration" />
-		<Style
-			Name="Declare Constant"
-			Bold="0"
-			TextColor="#58abeb"
-			ParentStyle="Declaration"
-			/>
+		<Style Name="Declare Constant" ParentStyle="Declaration" />
 		<Style Name="Declare Enum" ParentStyle="Declare Struct" />
-		<Style
-			Name="Declare Enum Const"
-			Bold="0"
-			TextColor="#b4bbc6"
-			ParentStyle="Declaration"
-			/>
+		<Style Name="Declare Enum Const" ParentStyle="Declaration" />
 		<Style Name="Declare Edit Macro" ParentStyle="Declare Function" />
 		<Style Name="Declare Prototype" ParentStyle="Declare Function" />
 		<Style Name="Preprocessor" ParentStyle="Declaration" />
@@ -2320,51 +2276,43 @@
 			/>
 		<Style
 			Name="Label"
-			Scale="100"
+			TextColor="#ff0000"
+			Scale="110"
 			Underline="Single"
-			TextColor="#d64b59"
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Interface" ParentStyle="Declare Class" />
 		<Style Name="Declare Resource" ParentStyle="Declaration" />
 		<Style Name="File" ParentStyle="Declaration" />
 		<Style Name="Declare Custom Tag" ParentStyle="Declaration" />
-		<Style
-			Name="Ref to Func"
-			Bold="0"
-			TextColor="#519cea"
-			ParentStyle="Reference"
-			/>
+		<Style Name="Ref to Func" Bold="1" ParentStyle="Reference" />
 		<Style Name="Ref to Macro" ParentStyle="Ref to Func" />
 		<Style Name="Ref to Struct" ParentStyle="Reference" />
 		<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
 		<Style Name="Ref to Typedef" ParentStyle="Ref to Struct" />
 		<Style
 			Name="Ref to Global Var"
-			Bold="0"
-			TextColor="#8e8ed7"
+			Bold="1"
+			Italic="1"
+			TextColor="#800080"
 			ParentStyle="Reference"
 			/>
 		<Style
 			Name="Ref to Const"
-			TextColor="#ff8080"
+			TextColor="#ff0000"
 			ParentStyle="Reference"
 			/>
 		<Style Name="Ref to Enum" ParentStyle="Reference" />
 		<Style Name="Ref to Custom" ParentStyle="Reference" />
 		<Style Name="Ref to EdMacro" ParentStyle="Reference" />
 		<Style Name="Ref to Class" ParentStyle="Ref to Struct" />
-		<Style Name="Ref to Method" Italic="1" ParentStyle="Ref to Func" />
-		<Style
-			Name="Ref to EnumConst"
-			TextColor="#ff5555"
-			ParentStyle="Ref to Const"
-			/>
+		<Style Name="Ref to Method" ParentStyle="Ref to Func" />
+		<Style Name="Ref to EnumConst" ParentStyle="Ref to Const" />
 		<Style Name="Ref to Proto" ParentStyle="Ref to Func" />
 		<Style Name="Ref to Preproc" ParentStyle="Reference" />
 		<Style Name="Ref to Search" ParentStyle="Reference" />
 		<Style Name="Ref to Label" ParentStyle="Reference" />
-		<Style Name="Ref to Member" Italic="0" ParentStyle="Reference" />
+		<Style Name="Ref to Member" ParentStyle="Reference" />
 		<Style Name="Ref to Interface" ParentStyle="Ref to Class" />
 		<Style Name="Ref to Resource" ParentStyle="Reference" />
 		<Style Name="Ref to File" ParentStyle="Reference" />
@@ -2373,7 +2321,7 @@
 			Bold="1"
 			Scale="150"
 			Underline="Thick"
-			FontName="Arial"
+			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
 			ParentStyle="Comment"
@@ -2383,7 +2331,7 @@
 			Bold="1"
 			Scale="130"
 			Underline="Single"
-			FontName="Arial"
+			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
 			ParentStyle="Comment"
@@ -2392,7 +2340,7 @@
 			Name="Comment Heading 3"
 			Bold="1"
 			Scale="120"
-			FontName="Arial"
+			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
 			ParentStyle="Comment"
@@ -2400,26 +2348,18 @@
 		<Style
 			Name="Comment Heading 4"
 			Bold="1"
-			FontName="Arial"
+			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
 			ParentStyle="Comment"
 			/>
-		<Style
-			Name="Comment Right"
-			Italic="1"
-			TextColor="#677a76"
-			BackColor="#141e2d"
-			ParentStyle="Comment"
-			/>
+		<Style Name="Comment Right" Italic="1" ParentStyle="Comment" />
 		<Style Name="Ref to Base Class" ParentStyle="Reference" />
 		<Style Name="Ref to Inline Type" ParentStyle="Reference" />
 		<Style Name="Inactive Code" TextColor="#808080" />
 		<Style
 			Name="Declare Parameter"
-			Bold="0"
 			Underline="Single"
-			TextColor="#b4bbc6"
 			ParentStyle="Declaration"
 			/>
 		<Style
@@ -2442,11 +2382,10 @@
 		<Style Name="Ref to Method Prototype" ParentStyle="Ref to Method" />
 		<Style
 			Name="Comment To Do"
-			Scale="120"
 			Bold="1"
-			TextColor="#404040"
-			BackColor="#eeee00"
-			FontName="Arial"
+			Scale="120"
+			BackColor="#ffff00"
+			FontName="Segoe UI"
 			FontPitchFamily="2"
 			FontCharset="0"
 			ParentStyle="Comment"
@@ -2467,23 +2406,11 @@
 			KeepWithNextLine="1"
 			ParentStyle="Declaration"
 			/>
-		<Style
-			Name="Comment Single Line"
-			Italic="1"
-			TextColor="#677a76"
-			BackColor="#141e2d"
-			ParentStyle="Comment"
-			/>
-		<Style
-			Name="Comment Multi Line"
-			Italic="1"
-			TextColor="#677a76"
-			BackColor="#141e2d"
-			ParentStyle="Comment"
-			/>
+		<Style Name="Comment Single Line" ParentStyle="Comment" />
+		<Style Name="Comment Multi Line" ParentStyle="Comment" />
 		<Style Name="Parentheses" ParentStyle="Delimiter" />
 		<Style Name="HTML Body Text" FixedWhiteSpace="0" />
-		<Style Name="HTML Tag" Bold="1" TextColor="#00ffff" />
+		<Style Name="HTML Tag" TextColor="#008000" Bold="1" />
 		<Style Name="Standard Property" ParentStyle="Ref to Member" />
 		<Style Name="Standard Function" ParentStyle="Ref to Func" />
 		<Style Name="Standard Object" ParentStyle="Ref to Class" />
@@ -2527,28 +2454,44 @@
 		<Style Name="Register" TextColor="#008000" Bold="1" />
 		<Style
 			Name="Python Doc String"
-			Italic="1"
+			TextColor="#000080"
 			FixedWhiteSpace="0"
-			ParentStyle="Comment"
+			Italic="1"
 			/>
 		<Style Name="Instruction" ParentStyle="Control" />
+		<Style Name="Reference Highlight" Underline="Thick" />
 		<Style
-			Name="Reference Highlight"
-			TextColor="#cdcfd3"
-			BackColor="#386a88"
+			Name="Declare VHDL Entity"
+			Scale="140"
+			ShadowColor="#c0c0c0"
+			KeepWithNextLine="1"
+			ParentStyle="Declaration"
 			/>
-		<Style Name="Declare VHDL Entity" ParentStyle="Declaration" />
-		<Style Name="Declare VHDL Architecture" ParentStyle="Declaration" />
-		<Style Name="Declare VHDL Component" ParentStyle="Declaration" />
-		<Style Name="Declare VHDL Process" ParentStyle="Declaration" />
-		<Style Name="Declare VHDL Config" ParentStyle="Declaration" />
+		<Style
+			Name="Declare VHDL Architecture"
+			Scale="140"
+			ShadowColor="#c0c0c0"
+			KeepWithNextLine="1"
+			ParentStyle="Declaration"
+			/>
+		<Style
+			Name="Declare VHDL Component"
+			ShadowColor="#c0c0c0"
+			KeepWithNextLine="1"
+			ParentStyle="Declaration"
+			/>
+		<Style Name="Declare VHDL Process" ParentStyle="Declare Function" />
+		<Style
+			Name="Declare VHDL Config"
+			ShadowColor="#c0c0c0"
+			KeepWithNextLine="1"
+			ParentStyle="Declaration"
+			/>
 		<Style Name="Ref to VHDL Entity" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Architecture" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Component" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Process" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Config" ParentStyle="Reference" />
-		<Style Name="HTML Tag Excerpt" />
-		<Style Name="new comment" />
 	</Styles>
 	<FTPSites>
 		<SiteList/>
@@ -2568,10 +2511,10 @@
 	</RemoteAccess>
 	<ProjectSync
 		NoWarnings="1"
-		RunInBackground="1"
+		RunInBackground="0"
 		RunEveryMinutes="60"
 		AddNewFiles="0"
-		RemoveOldFiles="0"
+		RemoveOldFiles="1"
 		SyncOnStartup="1"
 		/>
 	<ProjectDefaults
@@ -7704,6 +7647,433 @@
 				<Item Keyword="null" Style="Keyword" />
 			</Keywords>
 		</Language>
+		<Language
+			Name="ARM Assembly"
+			Comment=""
+			CaseSensitive="1"
+			CPreprocessor="1"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="1"
+			AllowSmartTab="1"
+			DetectNumbers="1"
+			CHexNum="1"
+			IntelHexNum="1"
+			MotorolaHexNum="1"
+			BasicHexNum="1"
+			IntelOctalNum="1"
+			QOctalNum="1"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Constant"
+					Pattern="([A-Za-z0-9_]+)=."
+					RegexType="Perl Compatible"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="^([_A-Za-z][A-Za-z0-9_]+):*"
+					RegexType="Perl Compatible multi-line"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString=";"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="//"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Multi Line"
+					StyleDelimiter="1"
+					StartString="/*"
+					EndString="*/"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="@"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="!" Style="Delimiter" />
+				<Item Keyword="#" Style="Delimiter" />
+				<Item Keyword="%" Style="Delimiter" />
+				<Item Keyword="&amp;" Style="Delimiter" />
+				<Item Keyword="&apos;" Style="Delimiter" />
+				<Item Keyword="(" Style="Delimiter" />
+				<Item Keyword=")" Style="Delimiter" />
+				<Item Keyword="*" Style="Delimiter" />
+				<Item Keyword="+" Style="Delimiter" />
+				<Item Keyword="," Style="Delimiter" />
+				<Item Keyword="-" Style="Delimiter" />
+				<Item Keyword=".align" Style="Keyword" />
+				<Item Keyword=".ascii" Style="Keyword" />
+				<Item Keyword=".BREAK" Style="Keyword" />
+				<Item Keyword=".bss" Style="Keyword" />
+				<Item Keyword=".byte" Style="Keyword" />
+				<Item Keyword=".CODE" Style="Keyword" />
+				<Item Keyword=".CONST" Style="Keyword" />
+				<Item Keyword=".CONTINUE" Style="Keyword" />
+				<Item Keyword=".CREF" Style="Keyword" />
+				<Item Keyword=".data" Style="Keyword" />
+				<Item Keyword=".DATA?" Style="Keyword" />
+				<Item Keyword=".define" Style="Keyword" />
+				<Item Keyword=".ELSE" Style="Keyword" />
+				<Item Keyword=".ELSEIF" Style="Keyword" />
+				<Item Keyword=".ENDIF" Style="Keyword" />
+				<Item Keyword=".ENDW" Style="Keyword" />
+				<Item Keyword=".ERR" Style="Keyword" />
+				<Item Keyword=".ERRB" Style="Keyword" />
+				<Item Keyword=".ERRDEF" Style="Keyword" />
+				<Item Keyword=".ERRDEFI" Style="Keyword" />
+				<Item Keyword=".ERRE" Style="Keyword" />
+				<Item Keyword=".ERRIDNI" Style="Keyword" />
+				<Item Keyword=".ERRNB" Style="Keyword" />
+				<Item Keyword=".ERRNDEF" Style="Keyword" />
+				<Item Keyword=".ERRNZ" Style="Keyword" />
+				<Item Keyword=".fill" Style="Keyword" />
+				<Item Keyword=".globl" Style="Keyword" />
+				<Item Keyword=".IF" Style="Keyword" />
+				<Item Keyword=".long" Style="Keyword" />
+				<Item Keyword=".MODEL" Style="Keyword" />
+				<Item Keyword=".NOCREF" Style="Keyword" />
+				<Item Keyword=".quad" Style="Keyword" />
+				<Item Keyword=".RADIX" Style="Keyword" />
+				<Item Keyword=".REPEAT" Style="Keyword" />
+				<Item Keyword=".STACK" Style="Keyword" />
+				<Item Keyword=".text" Style="Keyword" />
+				<Item Keyword=".UNTIL" Style="Keyword" />
+				<Item Keyword=".UNTILCXZ" Style="Keyword" />
+				<Item Keyword=".WHILE" Style="Keyword" />
+				<Item Keyword=".word" Style="Keyword" />
+				<Item Keyword="/" Style="Delimiter" />
+				<Item Keyword=":" Style="Delimiter" />
+				<Item Keyword=";" Style="Delimiter" />
+				<Item Keyword="&lt;" Style="Delimiter" />
+				<Item Keyword="=" Style="Delimiter" />
+				<Item Keyword="&gt;" Style="Delimiter" />
+				<Item Keyword="?" Style="Delimiter" />
+				<Item Keyword="@CATSTR" Style="Keyword" />
+				<Item Keyword="@INSTR" Style="Keyword" />
+				<Item Keyword="@SIZESTR" Style="Keyword" />
+				<Item Keyword="@SUBSTR" Style="Keyword" />
+				<Item Keyword="ABS" Style="Keyword" />
+				<Item Keyword="ACS" Style="Keyword" />
+				<Item Keyword="ADC" Style="Keyword" />
+				<Item Keyword="add" Style="Keyword" />
+				<Item Keyword="ADD" Style="Keyword" />
+				<Item Keyword="ADF" Style="Keyword" />
+				<Item Keyword="ADR" Style="Keyword" />
+				<Item Keyword="adr" Style="Keyword" />
+				<Item Keyword="ADRL" Style="Keyword" />
+				<Item Keyword="ALIGN" Style="Keyword" />
+				<Item Keyword="AND" Style="Keyword" />
+				<Item Keyword="and" Style="Keyword" />
+				<Item Keyword="ands" Style="Keyword" />
+				<Item Keyword="ANDS" Style="Keyword" />
+				<Item Keyword="ASL" Style="Keyword" />
+				<Item Keyword="ASN" Style="Keyword" />
+				<Item Keyword="ASR" Style="Keyword" />
+				<Item Keyword="ATN" Style="Keyword" />
+				<Item Keyword="b" Style="Keyword" />
+				<Item Keyword="B" Style="Keyword" />
+				<Item Keyword="BEQ" Style="Keyword" />
+				<Item Keyword="beq" Style="Keyword" />
+				<Item Keyword="bgt" Style="Keyword" />
+				<Item Keyword="BIC" Style="Keyword" />
+				<Item Keyword="bic" Style="Keyword" />
+				<Item Keyword="BKPT" Style="Keyword" />
+				<Item Keyword="bl" Style="Keyword" />
+				<Item Keyword="BL" Style="Keyword" />
+				<Item Keyword="BLX" Style="Keyword" />
+				<Item Keyword="BNE" Style="Keyword" />
+				<Item Keyword="bne" Style="Keyword" />
+				<Item Keyword="bx" Style="Keyword" />
+				<Item Keyword="BX" Style="Keyword" />
+				<Item Keyword="CDP" Style="Keyword" />
+				<Item Keyword="CDP2" Style="Keyword" />
+				<Item Keyword="CLZ" Style="Keyword" />
+				<Item Keyword="clz" Style="Keyword" />
+				<Item Keyword="CMF" Style="Keyword" />
+				<Item Keyword="CMN" Style="Keyword" />
+				<Item Keyword="CMP" Style="Keyword" />
+				<Item Keyword="cmp" Style="Keyword" />
+				<Item Keyword="CNF" Style="Keyword" />
+				<Item Keyword="COS" Style="Keyword" />
+				<Item Keyword="cps" Style="Keyword" />
+				<Item Keyword="CPS" Style="Keyword" />
+				<Item Keyword="DCB" Style="Keyword" />
+				<Item Keyword="DCD" Style="Keyword" />
+				<Item Keyword="DCF" Style="Keyword" />
+				<Item Keyword="DCFD" Style="Keyword" />
+				<Item Keyword="DCFS" Style="Keyword" />
+				<Item Keyword="DCS" Style="Keyword" />
+				<Item Keyword="DCW" Style="Keyword" />
+				<Item Keyword="define" Style="Keyword" />
+				<Item Keyword="defined" Style="Directive" />
+				<Item Keyword="dmb" Style="Keyword" />
+				<Item Keyword="DMB" Style="Keyword" />
+				<Item Keyword="DSB" Style="Keyword" />
+				<Item Keyword="dsb" Style="Keyword" />
+				<Item Keyword="DVF" Style="Keyword" />
+				<Item Keyword="elif" Style="Directive" />
+				<Item Keyword="else" Style="Directive" />
+				<Item Keyword="endif" Style="Directive" />
+				<Item Keyword="EOR" Style="Keyword" />
+				<Item Keyword="EQUB" Style="Keyword" />
+				<Item Keyword="EQUD" Style="Keyword" />
+				<Item Keyword="EQUF" Style="Keyword" />
+				<Item Keyword="EQUFD" Style="Keyword" />
+				<Item Keyword="EQUFS" Style="Keyword" />
+				<Item Keyword="EQUS" Style="Keyword" />
+				<Item Keyword="EQUW" Style="Keyword" />
+				<Item Keyword="EXP" Style="Keyword" />
+				<Item Keyword="FABS" Style="Keyword" />
+				<Item Keyword="FADD" Style="Keyword" />
+				<Item Keyword="FCMP" Style="Keyword" />
+				<Item Keyword="FCPY" Style="Keyword" />
+				<Item Keyword="FCVTDS" Style="Keyword" />
+				<Item Keyword="FCVTSD" Style="Keyword" />
+				<Item Keyword="FDIV" Style="Keyword" />
+				<Item Keyword="FDV" Style="Keyword" />
+				<Item Keyword="FIX" Style="Keyword" />
+				<Item Keyword="FLD" Style="Keyword" />
+				<Item Keyword="FLDMDB" Style="Keyword" />
+				<Item Keyword="FLDMIA" Style="Keyword" />
+				<Item Keyword="FLT" Style="Keyword" />
+				<Item Keyword="FMAC" Style="Keyword" />
+				<Item Keyword="FMDHR" Style="Keyword" />
+				<Item Keyword="FMDLR" Style="Keyword" />
+				<Item Keyword="FML" Style="Keyword" />
+				<Item Keyword="FMRDH" Style="Keyword" />
+				<Item Keyword="FMRDL" Style="Keyword" />
+				<Item Keyword="FMRS" Style="Keyword" />
+				<Item Keyword="FMRX" Style="Keyword" />
+				<Item Keyword="FMSC" Style="Keyword" />
+				<Item Keyword="FMSR" Style="Keyword" />
+				<Item Keyword="FMSTAT" Style="Keyword" />
+				<Item Keyword="FMUL" Style="Keyword" />
+				<Item Keyword="FMXR" Style="Keyword" />
+				<Item Keyword="FNEG" Style="Keyword" />
+				<Item Keyword="FNMAC" Style="Keyword" />
+				<Item Keyword="FNMSC" Style="Keyword" />
+				<Item Keyword="FNMUL" Style="Keyword" />
+				<Item Keyword="FRD" Style="Keyword" />
+				<Item Keyword="FSITO" Style="Keyword" />
+				<Item Keyword="FSQRT" Style="Keyword" />
+				<Item Keyword="FST" Style="Keyword" />
+				<Item Keyword="FSTMDB" Style="Keyword" />
+				<Item Keyword="FSTMIA" Style="Keyword" />
+				<Item Keyword="FSUB" Style="Keyword" />
+				<Item Keyword="FTOSI" Style="Keyword" />
+				<Item Keyword="FTOUI" Style="Keyword" />
+				<Item Keyword="FUITO" Style="Keyword" />
+				<Item Keyword="if" Style="Directive" />
+				<Item Keyword="ifdef" Style="Directive" />
+				<Item Keyword="ifndef" Style="Directive" />
+				<Item Keyword="include" Style="Keyword" />
+				<Item Keyword="ISB" Style="Keyword" />
+				<Item Keyword="isb" Style="Keyword" />
+				<Item Keyword="LDC" Style="Keyword" />
+				<Item Keyword="LDC2" Style="Keyword" />
+				<Item Keyword="LDF" Style="Keyword" />
+				<Item Keyword="LDM" Style="Keyword" />
+				<Item Keyword="ldmfd" Style="Keyword" />
+				<Item Keyword="ldmia" Style="Keyword" />
+				<Item Keyword="LDMIA" Style="Keyword" />
+				<Item Keyword="ldr" Style="Keyword" />
+				<Item Keyword="LDR" Style="Keyword" />
+				<Item Keyword="LDRB" Style="Keyword" />
+				<Item Keyword="LDRH" Style="Keyword" />
+				<Item Keyword="ldrh" Style="Keyword" />
+				<Item Keyword="LDRSB" Style="Keyword" />
+				<Item Keyword="LDRSH" Style="Keyword" />
+				<Item Keyword="LFM" Style="Keyword" />
+				<Item Keyword="LGN" Style="Keyword" />
+				<Item Keyword="LOG" Style="Keyword" />
+				<Item Keyword="LSL" Style="Keyword" />
+				<Item Keyword="mcr" Style="Keyword" />
+				<Item Keyword="MCR" Style="Keyword" />
+				<Item Keyword="MCR2" Style="Keyword" />
+				<Item Keyword="mcrne" Style="Keyword" />
+				<Item Keyword="mcrr" Style="Keyword" />
+				<Item Keyword="MCRR" Style="Keyword" />
+				<Item Keyword="MIA" Style="Keyword" />
+				<Item Keyword="MIAPH" Style="Keyword" />
+				<Item Keyword="MLA" Style="Keyword" />
+				<Item Keyword="MNF" Style="Keyword" />
+				<Item Keyword="mov" Style="Keyword" />
+				<Item Keyword="MOV" Style="Keyword" />
+				<Item Keyword="movne" Style="Keyword" />
+				<Item Keyword="MOVS" Style="Keyword" />
+				<Item Keyword="movs" Style="Keyword" />
+				<Item Keyword="movw" Style="Keyword" />
+				<Item Keyword="MRC" Style="Keyword" />
+				<Item Keyword="mrc" Style="Keyword" />
+				<Item Keyword="MRC2" Style="Keyword" />
+				<Item Keyword="mrcne" Style="Keyword" />
+				<Item Keyword="MRRC" Style="Keyword" />
+				<Item Keyword="mrs" Style="Keyword" />
+				<Item Keyword="MRS" Style="Keyword" />
+				<Item Keyword="MSR" Style="Keyword" />
+				<Item Keyword="msr" Style="Keyword" />
+				<Item Keyword="MUF" Style="Keyword" />
+				<Item Keyword="MUL" Style="Keyword" />
+				<Item Keyword="MVF" Style="Keyword" />
+				<Item Keyword="mvn" Style="Keyword" />
+				<Item Keyword="MVN" Style="Keyword" />
+				<Item Keyword="NEG" Style="Keyword" />
+				<Item Keyword="NOP" Style="Keyword" />
+				<Item Keyword="NRM" Style="Keyword" />
+				<Item Keyword="OPT" Style="Keyword" />
+				<Item Keyword="ORR" Style="Keyword" />
+				<Item Keyword="orr" Style="Keyword" />
+				<Item Keyword="orrne" Style="Keyword" />
+				<Item Keyword="ORRNE" Style="Keyword" />
+				<Item Keyword="PLD" Style="Keyword" />
+				<Item Keyword="POL" Style="Keyword" />
+				<Item Keyword="pop" Style="Keyword" />
+				<Item Keyword="POP" Style="Keyword" />
+				<Item Keyword="POW" Style="Keyword" />
+				<Item Keyword="pragma" Style="Keyword" />
+				<Item Keyword="push" Style="Keyword" />
+				<Item Keyword="PUSH" Style="Keyword" />
+				<Item Keyword="QADD" Style="Keyword" />
+				<Item Keyword="QDADD" Style="Keyword" />
+				<Item Keyword="QDSUB" Style="Keyword" />
+				<Item Keyword="QSUB" Style="Keyword" />
+				<Item Keyword="R0" Style="Keyword" />
+				<Item Keyword="R1" Style="Keyword" />
+				<Item Keyword="R10" Style="Keyword" />
+				<Item Keyword="R11" Style="Keyword" />
+				<Item Keyword="R12" Style="Keyword" />
+				<Item Keyword="R13" Style="Keyword" />
+				<Item Keyword="R14" Style="Keyword" />
+				<Item Keyword="R2" Style="Keyword" />
+				<Item Keyword="R3" Style="Keyword" />
+				<Item Keyword="R4" Style="Keyword" />
+				<Item Keyword="R5" Style="Keyword" />
+				<Item Keyword="R6" Style="Keyword" />
+				<Item Keyword="R7" Style="Keyword" />
+				<Item Keyword="R8" Style="Keyword" />
+				<Item Keyword="R9" Style="Keyword" />
+				<Item Keyword="RDF" Style="Keyword" />
+				<Item Keyword="ret" Style="Keyword" />
+				<Item Keyword="RFC" Style="Keyword" />
+				<Item Keyword="RFS" Style="Keyword" />
+				<Item Keyword="RMF" Style="Keyword" />
+				<Item Keyword="RND" Style="Keyword" />
+				<Item Keyword="ROR" Style="Keyword" />
+				<Item Keyword="RPW" Style="Keyword" />
+				<Item Keyword="RRX" Style="Keyword" />
+				<Item Keyword="RSB" Style="Keyword" />
+				<Item Keyword="RSC" Style="Keyword" />
+				<Item Keyword="RSF" Style="Keyword" />
+				<Item Keyword="SBC" Style="Keyword" />
+				<Item Keyword="SFM" Style="Keyword" />
+				<Item Keyword="SIN" Style="Keyword" />
+				<Item Keyword="SMLA" Style="Keyword" />
+				<Item Keyword="SMLAD" Style="Keyword" />
+				<Item Keyword="SMLAL" Style="Keyword" />
+				<Item Keyword="SMLALD" Style="Keyword" />
+				<Item Keyword="SMLAW" Style="Keyword" />
+				<Item Keyword="SMLSD" Style="Keyword" />
+				<Item Keyword="SMLSLD" Style="Keyword" />
+				<Item Keyword="SMMLA" Style="Keyword" />
+				<Item Keyword="SMMLS" Style="Keyword" />
+				<Item Keyword="SMMUL" Style="Keyword" />
+				<Item Keyword="SMUAD" Style="Keyword" />
+				<Item Keyword="SMUL" Style="Keyword" />
+				<Item Keyword="SMULL" Style="Keyword" />
+				<Item Keyword="SMULW" Style="Keyword" />
+				<Item Keyword="SMUSD" Style="Keyword" />
+				<Item Keyword="SQT" Style="Keyword" />
+				<Item Keyword="SSAT" Style="Keyword" />
+				<Item Keyword="SSAT16" Style="Keyword" />
+				<Item Keyword="STC" Style="Keyword" />
+				<Item Keyword="STC2" Style="Keyword" />
+				<Item Keyword="STF" Style="Keyword" />
+				<Item Keyword="STM" Style="Keyword" />
+				<Item Keyword="STMFD" Style="Keyword" />
+				<Item Keyword="stmfd" Style="Keyword" />
+				<Item Keyword="stmia" Style="Keyword" />
+				<Item Keyword="STMIA" Style="Keyword" />
+				<Item Keyword="STR" Style="Keyword" />
+				<Item Keyword="str" Style="Keyword" />
+				<Item Keyword="STRB" Style="Keyword" />
+				<Item Keyword="STRH" Style="Keyword" />
+				<Item Keyword="STRSB" Style="Keyword" />
+				<Item Keyword="STRSH" Style="Keyword" />
+				<Item Keyword="sub" Style="Keyword" />
+				<Item Keyword="SUB" Style="Keyword" />
+				<Item Keyword="subs" Style="Keyword" />
+				<Item Keyword="SUF" Style="Keyword" />
+				<Item Keyword="SWI" Style="Keyword" />
+				<Item Keyword="SWP" Style="Keyword" />
+				<Item Keyword="TAN" Style="Keyword" />
+				<Item Keyword="TEQ" Style="Keyword" />
+				<Item Keyword="tst" Style="Keyword" />
+				<Item Keyword="TST" Style="Keyword" />
+				<Item Keyword="UMAAL" Style="Keyword" />
+				<Item Keyword="UMLAL" Style="Keyword" />
+				<Item Keyword="UMULL" Style="Keyword" />
+				<Item Keyword="undef" Style="Keyword" />
+				<Item Keyword="URD" Style="Keyword" />
+				<Item Keyword="USAD8" Style="Keyword" />
+				<Item Keyword="USADA8" Style="Keyword" />
+				<Item Keyword="USAT" Style="Keyword" />
+				<Item Keyword="USAT16" Style="Keyword" />
+				<Item Keyword="VMSR" Style="Keyword" />
+				<Item Keyword="vmsr" Style="Keyword" />
+				<Item Keyword="WFC" Style="Keyword" />
+				<Item Keyword="WFE" Style="Keyword" />
+				<Item Keyword="wfe" Style="Keyword" />
+				<Item Keyword="wfi" Style="Keyword" />
+				<Item Keyword="WFI" Style="Keyword" />
+				<Item Keyword="WFINE" Style="Keyword" />
+			</Keywords>
+		</Language>
 	</Languages>
 	<ParsingOptions>
 		<ParsingPreferences
@@ -7723,15 +8093,15 @@
 		>
 		<SearchDialogs>
 			<Search
-				RegexType="Source Insight"
-				IgnoreCase="1"
+				RegexType="Source Insight multi-line"
+				IgnoreCase="0"
 				UseRegexp="0"
-				WrapAround="1"
-				SelectMatch="1"
+				WrapAround="0"
+				SelectMatch="0"
 				FindNonMatch="0"
 				FindOnePerLine="0"
 				FindBackward="0"
-				FindWholeWords="0"
+				FindWholeWords="1"
 				TouchFiles="0"
 				ReplacePreserveCase="0"
 				ReplaceConfirm="1"
@@ -7749,14 +8119,14 @@
 				ResultNormalizeFileNames="1"
 				/>
 			<LookupReferences
-				SearchMethod="Simple String"
+				SearchMethod="Look Up Reference"
 				RegexType="Source Insight"
-				IgnoreCase="1"
-				FindWholeWords="0"
+				IgnoreCase="0"
+				FindWholeWords="1"
 				SkipComments="0"
 				OnlyComments="0"
 				SkipDeadCode="0"
-				FindExactReference="0"
+				FindExactReference="1"
 				TouchFiles="0"
 				LinesOfContext="1"
 				ResultFileName="1"
@@ -7767,10 +8137,10 @@
 				ResultNormalizeFileNames="1"
 				/>
 			<SearchProject
-				SearchMethod="Simple String"
+				SearchMethod="Keyword Expression"
 				RegexType="Source Insight"
-				IgnoreCase="1"
-				FindWholeWords="0"
+				IgnoreCase="0"
+				FindWholeWords="1"
 				SkipComments="0"
 				OnlyComments="0"
 				SkipDeadCode="0"
@@ -7824,94 +8194,94 @@
 		<MainToolbar>
 			<Toolbars>
 				<Toolbar
-					Name="File"
-					Width="73"
+					Name="Browse"
+					Width="90"
 					Ordinal="0"
-					IsVisible="0"
-					NewRow="1"
-					/>
-				<Toolbar
-					Name="Edit"
-					Width="73"
-					Ordinal="1"
-					IsVisible="0"
-					NewRow="1"
-					/>
-				<Toolbar
-					Name="Search"
-					Width="73"
-					Ordinal="2"
-					IsVisible="0"
-					NewRow="1"
-					/>
-				<Toolbar
-					Name="Window"
-					Width="73"
-					Ordinal="3"
-					IsVisible="0"
-					NewRow="1"
-					/>
-				<Toolbar
-					Name="Help"
-					Width="73"
-					Ordinal="4"
-					IsVisible="0"
-					NewRow="1"
-					/>
-				<Toolbar
-					Name="View"
-					Width="1003"
-					Ordinal="5"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
-					Name="Symbols"
-					Width="219"
-					Ordinal="6"
+					Name="File"
+					Width="230"
+					Ordinal="1"
+					IsVisible="1"
+					NewRow="0"
+					/>
+				<Toolbar
+					Name="Edit"
+					Width="197"
+					Ordinal="2"
+					IsVisible="1"
+					NewRow="0"
+					/>
+				<Toolbar
+					Name="Search"
+					Width="222"
+					Ordinal="3"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Navigation"
-					Width="188"
-					Ordinal="7"
+					Width="156"
+					Ordinal="4"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
-					Name="Outline"
-					Width="170"
+					Name="Symbols"
+					Width="189"
+					Ordinal="5"
+					IsVisible="1"
+					NewRow="0"
+					/>
+				<Toolbar
+					Name="Window"
+					Width="156"
+					Ordinal="6"
+					IsVisible="1"
+					NewRow="0"
+					/>
+				<Toolbar
+					Name="Help"
+					Width="90"
+					Ordinal="7"
+					IsVisible="0"
+					NewRow="0"
+					/>
+				<Toolbar
+					Name="View"
+					Width="387"
 					Ordinal="8"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
-					Name="Browse"
-					Width="254"
-					Ordinal="9"
-					IsVisible="1"
-					NewRow="0"
-					/>
-				<Toolbar
 					Name="Source Control"
-					Width="77"
-					Ordinal="10"
+					Width="204"
+					Ordinal="9"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Build"
-					Width="73"
-					Ordinal="11"
+					Width="156"
+					Ordinal="10"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
+					Name="Outline"
+					Width="156"
+					Ordinal="11"
+					IsVisible="1"
+					NewRow="0"
+					/>
+				<Toolbar
 					Name="Layout"
-					Width="73"
+					Width="222"
 					Ordinal="12"
-					IsVisible="0"
+					IsVisible="1"
 					NewRow="0"
 					/>
 			</Toolbars>
@@ -7946,13 +8316,18 @@
 		<SymbolTypes All="1" />
 	</ProjectReport>
 	<SymbolPane
-		Width="520"
-		TextColor="#8b93a4"
-		BackColor="#191c20"
+		Width="276"
+		TextColor="#000000"
+		BackColor="#d6edd8"
 		ShowChanges="1"
 		ShowLongFunctions="1"
 		>
-		<Font name="Hiragino Sans W5" psize="8" fpfamily="34" charset="0" />
+		<Font
+			name="Microsoft YaHei UI"
+			psize="9"
+			fpfamily="34"
+			charset="134"
+			/>
 		<SymbolTypes All="1" />
 		<SymbolSorting
 			SortMode="1"
@@ -7979,7 +8354,7 @@
 	</ParseConditions>
 	<SourceFormatter>
 		<SourceFormatPresets
-			CurrentName="Standard"
+			CurrentName="ANSI"
 			>
 			<PresetList>
 				<Preset
@@ -8235,10 +8610,10 @@
 			SortBy="Name"
 			>
 			<ListDisplay
-				TextColor="#9696b4"
-				BackColor="#000000"
+				TextColor="#000000"
+				BackColor="#ffffff"
 				>
-				<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+				<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 			</ListDisplay>
 		</SnippetWindowOptions>
 	</SnippetWindow>
@@ -8251,33 +8626,27 @@
 		ExpandSnippetVars="1"
 		>
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffc8"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ClipWindow>
 	<ContextWindow
 		IsVisible="1"
 		IsLocked="0"
 		IsMonoFontView="0"
-		ViewLineNumbers="0"
+		ViewLineNumbers="1"
 		ShowOverview="0"
-		PercentScale="90"
+		PercentScale="100"
 		ShowBaseStructure="1"
-		BackColor="#1e2127"
+		BackColor="#d6edd8"
 		>
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font
-				name="Hiragino Sans W5"
-				bold="1"
-				psize="9"
-				fpfamily="34"
-				charset="0"
-				/>
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 		<TrackingOptions tracktype="1" InComments="0" InStrings="0" InAnyFile="0" />
 	</ContextWindow>
@@ -8292,10 +8661,10 @@
 		FileCompareMethod="CompareSizeAndDate"
 		>
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</DirectoryCompareWindow>
 	<FileCompareWindow
@@ -8306,39 +8675,33 @@
 		ShowScrollBar="1"
 		ShowNestingLines="1"
 		PercentScale="100"
-		BackColor="#1e2127"
+		BackColor="#d6edd8"
 		ShowSymbolPane="1"
-		SymbolPaneWidth="288"
+		SymbolPaneWidth="216"
 		DiffCmdLine="&quot;%PROGRAM_DIR%\sidiff.exe&quot; -C -b -n"
 		AllowEdits="0"
 		>
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</FileCompareWindow>
 	<ProjectFileWindow
 		IsLocked="0"
-		ShowFileDate="1"
-		ShowFileSize="1"
+		ShowFileDate="0"
+		ShowFileSize="0"
 		ShowDirName="1"
-		ShowMetrics="1"
+		ShowMetrics="0"
 		CodeMetricsType="1"
 		SortColumn="0"
 		>
 		<ListDisplay
-			TextColor="#b1baca"
-			BackColor="#2c313b"
+			TextColor="#000000"
+			BackColor="#d6edd8"
 			>
-			<Font
-				name="Hiragino Sans W5"
-				bold="1"
-				psize="8"
-				fpfamily="34"
-				charset="0"
-				/>
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFileWindow>
 	<ProjectFileTypeWindow
@@ -8350,10 +8713,10 @@
 		>
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFileTypeWindow>
 	<ProjectFolderWindow
@@ -8364,10 +8727,10 @@
 		SplitPercent="50"
 		>
 		<ListDisplay
-			TextColor="#b5becf"
-			BackColor="#2d313c"
+			TextColor="#000000"
+			BackColor="#d6edd8"
 			>
-			<Font name="@Hiragino Sans W5" psize="9" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFolderWindow>
 	<ProjectSymbolWindow
@@ -8436,10 +8799,10 @@
 		</SymbolTypes>
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#d6edd8"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="@Microsoft YaHei UI" psize="9" fpfamily="34" charset="0" />
 		</ListDisplay>
 	</ProjectSymbolWindow>
 	<ProjectSymbolTypeWindow
@@ -8508,10 +8871,10 @@
 		</SymbolTypes>
 		<Sort SortType="6" Invert="0" />
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#d6edd8"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectSymbolTypeWindow>
 	<WindowListWindow
@@ -8520,10 +8883,10 @@
 		ShowSymbol="1"
 		>
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</WindowListWindow>
 	<RelationWindow>
@@ -8531,10 +8894,10 @@
 			IsVisible="0"
 			>
 			<ListOptions
-				TextColor="#9696b4"
-				BackColor="#000000"
+				TextColor="#000000"
+				BackColor="#d6edd8"
 				>
-				<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+				<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 			</ListOptions>
 			<GraphOptions
 				LayoutStyle="1"
@@ -8543,25 +8906,19 @@
 				LineEndType="1"
 				LinePathType="2"
 				SpacingPercent="50"
-				BackColor="#282c32"
-				LineColor="#b4bbc6"
-				ReverseLineColor="#b4bbc6"
+				BackColor="#c0c0c0"
+				LineColor="#000080"
+				ReverseLineColor="#ff0000"
 				UseReverseLineColor="1"
 				>
 				<NodeFormat
-					TextColor="#b4bbc6"
-					BackColor="#3b404b"
-					BorderColor="#202020"
+					TextColor="#000000"
+					BackColor="#ffffff"
+					BorderColor="#808080"
 					UseDropShadow="1"
-					UseShading="0"
+					UseShading="1"
 					>
-					<Font
-						name="Hiragino Sans W6"
-						bold="1"
-						psize="8"
-						fpfamily="34"
-						charset="0"
-						/>
+					<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 				</NodeFormat>
 			</GraphOptions>
 		</RelationWindowOptions>
@@ -8583,7 +8940,7 @@
 				<SymbolTypes All="1" />
 				<CodeMetricsFilter CodeMetricsType="1" MinValue="0" MaxValue="0" />
 				<ViewRelationRules
-					ForTypes="Types Used"
+					ForTypes="Contents"
 					ForFunctions="References"
 					ForVariables="References"
 					ForClasses="Inheritance"
@@ -8620,10 +8977,10 @@
 			<item wildcard="*.xml" />
 		</AsciiModeFiles>
 		<ListDisplay
-			TextColor="#9696b4"
-			BackColor="#000000"
+			TextColor="#000000"
+			BackColor="#ffffff"
 			>
-			<Font name="Segoe UI" psize="8" fpfamily="34" charset="0" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</FTPWindow>
 </SourceInsightConfiguration>
